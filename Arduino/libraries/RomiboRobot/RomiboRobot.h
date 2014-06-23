@@ -310,9 +310,9 @@ public:
   void headTiltYes(void);
   void headTiltNo(void);
   void headRoll(void);
-
   void bob(void);
-
+  void nod(void);
+  void wiggle(void);
   // Each color channel is specified as an integer on [0,255] representing
   // intensity.  The actual implementation may or may not offer proportional
   // color.  Several overloaded forms are provided to either specify an entire color

@@ -844,6 +844,32 @@ void RomiboRobot::bob(void)
 
 }
 
+void RomiboRobot::nod(void)
+{
+  setHeadPosition (0, 50);
+  delay (400);
+
+  setHeadPosition (50, 0);
+  delay (300);
+
+  setNeutralHeadPosition ();
+}
+
+
+void RomiboRobot::wiggle(void)
+{
+  setHeadPosition (45, 50);
+  delay (50);
+
+  setHeadPosition (60, 50);
+  delay (50);
+
+  setHeadPosition (50, 55);
+  delay (50);
+
+  setNeutralHeadPosition ();
+}
+
 void RomiboRobot::headRoll(void)
 {
   setHeadPosition(50,50);
