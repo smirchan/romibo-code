@@ -84,6 +84,7 @@
 		74D1A827170BA8B3007E8CF9 /* movement_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A826170BA8B3007E8CF9 /* movement_base.png */; };
 		74D1A829170F5BD0007E8CF9 /* RomiboAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */; };
 		74D1A82B170F5BDE007E8CF9 /* RomiboAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */; };
+		D141B993195B104F000C2719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D141B992195B104F000C2719 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +202,7 @@
 		74D1A826170BA8B3007E8CF9 /* movement_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movement_base.png; path = imgs/movement_base.png; sourceTree = "<group>"; };
 		74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RomiboAppIcon.png; path = imgs/RomiboAppIcon.png; sourceTree = "<group>"; };
 		74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RomiboAppIcon.png; sourceTree = "<group>"; };
+		D141B992195B104F000C2719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +345,7 @@
 				63DBAFDF14B0126D00EAD344 /* AppDelegate.m */,
 				63DBAFE714B0126D00EAD344 /* ViewController.h */,
 				63DBAFE814B0126D00EAD344 /* ViewController.m */,
+				D141B992195B104F000C2719 /* Images.xcassets */,
 				63DBAFD614B0126D00EAD344 /* Supporting Files */,
 			);
 			path = Romibo;
@@ -491,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63DBAFDA14B0126D00EAD344 /* InfoPlist.strings in Resources */,
+				D141B993195B104F000C2719 /* Images.xcassets in Resources */,
 				63DD0E9714B5393B002FDC2F /* background-01.png in Resources */,
 				63DD0E9814B5393B002FDC2F /* background-02.png in Resources */,
 				63DD0E9914B5393B002FDC2F /* background-03.png in Resources */,
@@ -702,13 +706,15 @@
 		63DBB00214B0126D00EAD344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Romibo/Romibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = /Users/HCII/Documents/RomiboApp/Romibo/lib;
 				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/HCII/Documents/RomiboApp/Romibo/lib/**";
 				INFOPLIST_FILE = "Romibo/Romibo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos6.1;
@@ -720,12 +726,14 @@
 		63DBB00314B0126D00EAD344 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Romibo/Romibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = /Users/HCII/Documents/RomiboApp/Romibo/lib;
 				INFOPLIST_FILE = "Romibo/Romibo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos6.1;
@@ -803,12 +811,14 @@
 		7438732C174FF95C0069EEC9 /* Ad-Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Romibo/Romibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = /Users/HCII/Documents/RomiboApp/Romibo/lib;
 				INFOPLIST_FILE = "Romibo/Romibo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos6.1;
