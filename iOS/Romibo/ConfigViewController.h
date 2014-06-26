@@ -20,6 +20,7 @@
     IBOutlet UITextField *ipTail;
     IBOutlet UIButton *connectBtn;
     IBOutlet UIButton *disconnectBtn;
+    IBOutlet UISwitch *drivingSwitch;
 }
 
 @property (nonatomic, retain) id <DismissPopoverDelegate> popDelegate;
@@ -29,5 +30,6 @@
 -(IBAction)disconnectClicked:(id)sender;
 -(void)configureButtonState:(bool) isConnected;
 -(void)setTextBoxText:(NSString*) text;
+
 
 @end

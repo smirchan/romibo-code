@@ -51,6 +51,10 @@
         childView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
        
     }
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    [userDefaults setBool:YES forKey:@"ALLOW_DRIVING"];
     
     [self setupButtonScrollView];
    

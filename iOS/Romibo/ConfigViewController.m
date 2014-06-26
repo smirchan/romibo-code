@@ -31,7 +31,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.contentSizeForViewInPopover = CGSizeMake(300, 260);
+        self.preferredContentSize = CGSizeMake(300, 260);
     }
     return self;
 }
@@ -60,7 +60,7 @@
         [disconnectBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         
         [connectBtn setEnabled:true];
-        [connectBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [connectBtn setTitleColor:[UIColor colorWithRed:0.0 green:0.612 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
     }
 }
 
@@ -75,7 +75,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-     
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    drivingSwitch.on = [userDefaults boolForKey:@"ALLOW_DRIVING"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    [userDefaults setBool:drivingSwitch.isOn forKey:@"ALLOW_DRIVING"];
 }
 
 - (void)viewDidUnload
@@ -83,6 +93,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -100,7 +111,7 @@
     
     [disconnectBtn release];
     disconnectBtn = nil;
-
+    
     [super dealloc];
 }
 @end
