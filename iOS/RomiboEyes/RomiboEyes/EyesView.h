@@ -10,4 +10,5 @@
 
 @interface EyesView : UIView
 
+- (void)blink;
 @end

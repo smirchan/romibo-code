@@ -14,18 +14,39 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+- (void)viewDidLoad
+{
+    
+}
+
+- (void)blink
+{
+    [UIView animateWithDuration:0.1
+                     animations:^{
+                         self.transform = CGAffineTransformMakeScale(1.0, 0);
+                     } completion:^(BOOL finished) {
+                         self.transform = CGAffineTransformMakeScale(1.0, 1.0);
+                     }];
+}
+
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+    CGFloat width = self.bounds.size.width;
+    CGFloat height = self.bounds.size.height;
+
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0);
+    CGRect eyeballRect1 = CGRectMake(90, 10, 120, height - 20);
+    CGContextFillEllipseInRect(context, eyeballRect1);
+    
+    CGRect eyeballRect2 = CGRectMake(width - 210, 10, 120, height - 20);
+    CGContextFillEllipseInRect(context, eyeballRect2);
 }
-*/
+
 
 @end

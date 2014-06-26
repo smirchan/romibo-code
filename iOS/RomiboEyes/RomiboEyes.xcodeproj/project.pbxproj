@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11D6E79195CA26400060F1B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11D6E78195CA26400060F1B /* AssetsLibrary.framework */; };
 		D141B9A9195B196B000C2719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D141B9A8195B196B000C2719 /* Foundation.framework */; };
 		D141B9AB195B196B000C2719 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D141B9AA195B196B000C2719 /* CoreGraphics.framework */; };
 		D141B9AD195B196B000C2719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D141B9AC195B196B000C2719 /* UIKit.framework */; };
@@ -22,8 +23,10 @@
 		D141B9CA195B196B000C2719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D141B9AE195B196B000C2719 /* CoreData.framework */; };
 		D141B9D2195B196B000C2719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D141B9D0195B196B000C2719 /* InfoPlist.strings */; };
 		D141B9D4195B196B000C2719 /* RomiboEyesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D141B9D3195B196B000C2719 /* RomiboEyesTests.m */; };
-		D141B9E8195B1A52000C2719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D141B9E7195B1A52000C2719 /* ViewController.m */; };
+		D141B9E8195B1A52000C2719 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D141B9E7195B1A52000C2719 /* ViewController.mm */; };
 		D1DD06F2195C7DEF00AFEF98 /* EyesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD06F1195C7DEE00AFEF98 /* EyesView.m */; };
+		D1DD06F4195C8A2700AFEF98 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DD06F3195C8A2700AFEF98 /* opencv2.framework */; };
+		D1DD06F6195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1DD06F5195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D11D6E78195CA26400060F1B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D141B9A5195B196B000C2719 /* RomiboEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomiboEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D141B9A8195B196B000C2719 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D141B9AA195B196B000C2719 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,9 +60,11 @@
 		D141B9D1195B196B000C2719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D141B9D3195B196B000C2719 /* RomiboEyesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomiboEyesTests.m; sourceTree = "<group>"; };
 		D141B9E6195B1A52000C2719 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RomiboEyes/ViewController.h; sourceTree = "<group>"; };
-		D141B9E7195B1A52000C2719 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = RomiboEyes/ViewController.m; sourceTree = "<group>"; };
+		D141B9E7195B1A52000C2719 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = RomiboEyes/ViewController.mm; sourceTree = "<group>"; };
 		D1DD06F0195C7DEE00AFEF98 /* EyesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EyesView.h; path = RomiboEyes/EyesView.h; sourceTree = "<group>"; };
 		D1DD06F1195C7DEE00AFEF98 /* EyesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EyesView.m; path = RomiboEyes/EyesView.m; sourceTree = "<group>"; };
+		D1DD06F3195C8A2700AFEF98 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		D1DD06F5195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11D6E79195CA26400060F1B /* AssetsLibrary.framework in Frameworks */,
+				D1DD06F4195C8A2700AFEF98 /* opencv2.framework in Frameworks */,
 				D141B9AB195B196B000C2719 /* CoreGraphics.framework in Frameworks */,
 				D141B9AF195B196B000C2719 /* CoreData.framework in Frameworks */,
 				D141B9AD195B196B000C2719 /* UIKit.framework in Frameworks */,
@@ -91,9 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				D141B9E6195B1A52000C2719 /* ViewController.h */,
+				D141B9E7195B1A52000C2719 /* ViewController.mm */,
 				D1DD06F0195C7DEE00AFEF98 /* EyesView.h */,
 				D1DD06F1195C7DEE00AFEF98 /* EyesView.m */,
-				D141B9E7195B1A52000C2719 /* ViewController.m */,
 				D141B9B0195B196B000C2719 /* RomiboEyes */,
 				D141B9CD195B196B000C2719 /* RomiboEyesTests */,
 				D141B9A7195B196B000C2719 /* Frameworks */,
@@ -113,6 +121,8 @@
 		D141B9A7195B196B000C2719 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D11D6E78195CA26400060F1B /* AssetsLibrary.framework */,
+				D1DD06F3195C8A2700AFEF98 /* opencv2.framework */,
 				D141B9A8195B196B000C2719 /* Foundation.framework */,
 				D141B9AA195B196B000C2719 /* CoreGraphics.framework */,
 				D141B9AC195B196B000C2719 /* UIKit.framework */,
@@ -137,6 +147,7 @@
 		D141B9B1195B196B000C2719 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1DD06F5195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml */,
 				D141B9B2195B196B000C2719 /* RomiboEyes-Info.plist */,
 				D141B9B3195B196B000C2719 /* InfoPlist.strings */,
 				D141B9B6195B196B000C2719 /* main.m */,
@@ -239,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D141B9B5195B196B000C2719 /* InfoPlist.strings in Resources */,
+				D1DD06F6195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml in Resources */,
 				D141B9C0195B196B000C2719 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +272,7 @@
 			files = (
 				D141B9BB195B196B000C2719 /* AppDelegate.m in Sources */,
 				D141B9BE195B196B000C2719 /* RomiboEyes.xcdatamodeld in Sources */,
-				D141B9E8195B1A52000C2719 /* ViewController.m in Sources */,
+				D141B9E8195B1A52000C2719 /* ViewController.mm in Sources */,
 				D141B9B7195B196B000C2719 /* main.m in Sources */,
 				D1DD06F2195C7DEF00AFEF98 /* EyesView.m in Sources */,
 			);
@@ -379,10 +391,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Suvir/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RomiboEyes/RomiboEyes-Prefix.pch";
 				INFOPLIST_FILE = "RomiboEyes/RomiboEyes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,6 +409,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Suvir/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RomiboEyes/RomiboEyes-Prefix.pch";
 				INFOPLIST_FILE = "RomiboEyes/RomiboEyes-Info.plist";

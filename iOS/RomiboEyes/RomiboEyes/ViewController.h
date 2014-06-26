@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EyesView.h"
+#import <opencv2/highgui/cap_ios.h>     // Import OpenCV header file
+
 
 @interface ViewController : UIViewController
 {
-    
+    EyesView *eyesView;
+    UIButton *cameraButton;
 }
 
--(void)setupEyesSubview;
+@property CvVideoCamera *camera;
 
+- (void)setupEyesSubview;
+- (void)addCameraButton;
+- (void)startCamera:(UIButton *)button;
 @end
