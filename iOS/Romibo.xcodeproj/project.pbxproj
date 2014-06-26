@@ -95,6 +95,20 @@
 			remoteGlobalIDString = 63DBAFCA14B0126D00EAD344;
 			remoteInfo = Romibo;
 		};
+		D141B9E2195B196D000C2719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D141B9A5195B196B000C2719;
+			remoteInfo = RomiboEyes;
+		};
+		D141B9E4195B196D000C2719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D141B9C5195B196B000C2719;
+			remoteInfo = RomiboEyesTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -203,6 +217,7 @@
 		74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RomiboAppIcon.png; path = imgs/RomiboAppIcon.png; sourceTree = "<group>"; };
 		74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RomiboAppIcon.png; sourceTree = "<group>"; };
 		D141B992195B104F000C2719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RomiboEyes.xcodeproj; path = RomiboEyes/RomiboEyes.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +312,7 @@
 		63DBAFC014B0126D00EAD344 = {
 			isa = PBXGroup;
 			children = (
+				D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */,
 				743A141E178CB334007AAEB5 /* MainStoryboard_iPad.storyboard */,
 				743A141C178CAF1C007AAEB5 /* simple_screens */,
 				7419372F17691B180012A630 /* screens */,
@@ -422,6 +438,15 @@
 			name = imgs;
 			sourceTree = "<group>";
 		};
+		D141B9DE195B196B000C2719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D141B9E3195B196D000C2719 /* RomiboEyes.app */,
+				D141B9E5195B196D000C2719 /* RomiboEyesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,6 +505,12 @@
 			mainGroup = 63DBAFC014B0126D00EAD344;
 			productRefGroup = 63DBAFCC14B0126D00EAD344 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D141B9DE195B196B000C2719 /* Products */;
+					ProjectRef = D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				63DBAFCA14B0126D00EAD344 /* Romibo */,
@@ -487,6 +518,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D141B9E3195B196D000C2719 /* RomiboEyes.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RomiboEyes.app;
+			remoteRef = D141B9E2195B196D000C2719 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D141B9E5195B196D000C2719 /* RomiboEyesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RomiboEyesTests.xctest;
+			remoteRef = D141B9E4195B196D000C2719 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63DBAFC914B0126D00EAD344 /* Resources */ = {
