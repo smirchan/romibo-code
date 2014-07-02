@@ -11,7 +11,7 @@
 #import <opencv2/highgui/cap_ios.h>     // Import OpenCV header file
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CvVideoCameraDelegate>
 {
     EyesView *eyesView;
     UIButton *cameraButton;

@@ -11,15 +11,22 @@
 #import <opencv2/highgui/highgui_c.h>
 #import <opencv2/highgui/cap_ios.h>
 
+using namespace cv;
+
+NSString * const faceCascadeName = @"haarcascade_frontalface_default";
+NSString * const faceCascadePath = [[NSBundle mainBundle] pathForResource:faceCascadeName ofType:@"xml"];
+CascadeClassifier faceCascade;
+
+
 @interface ViewController ()
 
 @end
+
 
 @implementation ViewController
 
 @synthesize camera;
 
-using namespace cv;
 
 - (void)viewDidLoad
 {
@@ -33,7 +40,7 @@ using namespace cv;
     
     [self addCameraButton];
     
-    camera = [[CvVideoCamera alloc] init];
+    camera = [[CvVideoCamera alloc] initWithParentView:[[UIImageView alloc] initWithFrame:self.view.bounds]];
     //camera.delegate = self;
     camera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
     camera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
@@ -50,10 +57,17 @@ using namespace cv;
 
 - (void)setupEyesSubview
 {
-    eyesView = [[EyesView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.height, self.view.bounds.size.width)];
-    
-    [self.view addSubview:eyesView];
+    CGFloat height = self.view.bounds.size.width;  // In landscape
+    CGFloat width = self.view.bounds.size.height;
 
+    eyesView = [[EyesView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    [self.view addSubview:eyesView];
+    
+    Eye *eye1 = [[Eye alloc] initWithFrame:CGRectMake(110, 60, 80, height - 110)];
+    [eyesView addSubview:eye1];
+    
+    Eye *eye2 = [[Eye alloc] initWithFrame:CGRectMake(width - 190, 60, 80, height - 110)];
+    [eyesView addSubview:eye2];
 }
 
 - (void)addCameraButton
@@ -70,7 +84,28 @@ using namespace cv;
     [button setTitle:@"Stop" forState:UIControlStateApplication];
     NSLog(@"Blink");
     [eyesView blink];
+    faceCascade.load([faceCascadePath UTF8String]);
+    [camera start];
 }
+
+- (void)processImage:(Mat&)colorFrame;
+{
+    NSLog(@"Process");
+    vector<Mat> bgrPlanes;
+    split(colorFrame, bgrPlanes);
+    Mat grayFrame = bgrPlanes[2]; // R channel
+    vector<cv::Rect> faceRects;
+    
+    bitwise_not(grayFrame, grayFrame);
+
+    faceCascade.detectMultiScale(grayFrame, faceRects);
+    
+    for(unsigned int r = 0; r < faceRects.size(); ++r) {
+        NSLog(@"%i", faceRects[r].x);
+    }
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -21,12 +21,11 @@
 
 - (void)viewDidLoad
 {
-    
 }
 
 - (void)blink
 {
-    [UIView animateWithDuration:0.1
+    [UIView animateWithDuration:0.2
                      animations:^{
                          self.transform = CGAffineTransformMakeScale(1.0, 0);
                      } completion:^(BOOL finished) {
