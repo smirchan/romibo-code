@@ -84,6 +84,7 @@
 		74D1A827170BA8B3007E8CF9 /* movement_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A826170BA8B3007E8CF9 /* movement_base.png */; };
 		74D1A829170F5BD0007E8CF9 /* RomiboAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */; };
 		74D1A82B170F5BDE007E8CF9 /* RomiboAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */; };
+		D12E77A619670A1D008A7381 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12E77A519670A1D008A7381 /* CoreMotion.framework */; };
 		D141B993195B104F000C2719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D141B992195B104F000C2719 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -216,6 +217,7 @@
 		74D1A826170BA8B3007E8CF9 /* movement_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movement_base.png; path = imgs/movement_base.png; sourceTree = "<group>"; };
 		74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RomiboAppIcon.png; path = imgs/RomiboAppIcon.png; sourceTree = "<group>"; };
 		74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RomiboAppIcon.png; sourceTree = "<group>"; };
+		D12E77A519670A1D008A7381 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D141B992195B104F000C2719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RomiboEyes.xcodeproj; path = RomiboEyes/RomiboEyes.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +227,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12E77A619670A1D008A7381 /* CoreMotion.framework in Frameworks */,
 				6396AF7714B25A230023CE66 /* CFNetwork.framework in Frameworks */,
 				6396AD7E14B24DF00023CE66 /* Security.framework in Frameworks */,
 				63DBAFD014B0126D00EAD344 /* UIKit.framework in Frameworks */,
@@ -339,6 +342,7 @@
 		63DBAFCE14B0126D00EAD344 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D12E77A519670A1D008A7381 /* CoreMotion.framework */,
 				6396AF7614B25A230023CE66 /* CFNetwork.framework */,
 				6396AD7D14B24DF00023CE66 /* Security.framework */,
 				63DBAFCF14B0126D00EAD344 /* UIKit.framework */,
