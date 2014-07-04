@@ -44,14 +44,13 @@
     
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    
     if (!childView)
     {
         childView = [[ChildBaseView alloc] initWithNibName:@"ChildBaseView" bundle:nil];
         childView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
        
     }
-
+    
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
     [userDefaults setBool:YES forKey:@"ALLOW_DRIVING"];
@@ -90,7 +89,6 @@
         [self presentModalViewController:childView animated:YES];
 
 }
-
 
 
 - (void)viewDidUnload
@@ -174,6 +172,16 @@
     [drivingView release];
 }
 
+- (void)tiltClicked:(id)sender
+{
+    [dNub startAccelerometer];
+
+}
+
+- (void)tiltRaised:(id)sender
+{
+    [dNub stopAccelerometer];
+}
 
 -(IBAction)configClicked:(id)sender
 {
@@ -195,6 +203,7 @@
     CGRect popoverRect = [self.view convertRect:[sender frame] toView:[sender superview]];
     
     [configPopover presentPopoverFromRect:popoverRect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated: YES];
+
 }
 
 -(void)connectClicked:(NSString*)ipaddr

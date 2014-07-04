@@ -10,4 +10,7 @@
 
 @interface Eye : UIView
 
+@property CGPoint originalCenter;
+
+- (void)moveX: (CGFloat)x Y:(CGFloat)y;
 @end

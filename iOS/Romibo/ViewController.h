@@ -24,6 +24,8 @@
 
 {
     IBOutlet UILabel *connectionLabel;
+    IBOutlet UIButton *tiltButton;
+    
     UIPopoverController* configPopover;
 
     
@@ -48,21 +50,25 @@
 -(IBAction)sadClicked:(id)sender;
 -(IBAction)surprisedClicked:(id)sender;
 -(IBAction)angryClicked:(id)sender;
+-(IBAction)tiltClicked:(id)sender;
+-(IBAction)tiltRaised:(id)sender;
 
 //gear button
--(IBAction)configClicked:(id)sender;
--(void)closePopup;
--(void)connectClicked:(NSString*) ipaddr;
--(void)disconnectClicked;
--(void)setConnectionStatus;
+- (IBAction)configClicked:(id)sender;
+- (void)closePopup;
+- (void)connectClicked:(NSString*) ipaddr;
+- (void)disconnectClicked;
+- (void)setConnectionStatus;
 
 //silhouette button
--(IBAction)changeShell:(id)sender;
+- (IBAction)changeShell:(id)sender;
 
 //component views (drive, tilt, buttons)
--(void)setupHeadTiltSubview;
--(void)setupDrivingSubview;
--(void)setupButtonScrollView;
+- (void)setupHeadTiltSubview;
+- (void)setupDrivingSubview;
+- (void)setupButtonScrollView;
 
+//accelerometer
+- (void)startAccelerometer;
 
 @end

@@ -114,6 +114,18 @@
                                     <action selector="angryClicked:" destination="2" eventType="touchDown" id="u7C-jq-C7U"/>
                                 </connections>
                             </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="whK-jB-fZI">
+                                <rect key="frame" x="686" y="216" width="95" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="dot_on.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tiltClicked:" destination="2" eventType="touchDown" id="SLL-hb-UhA"/>
+                                    <action selector="tiltRaised:" destination="2" eventType="touchUpInside" id="mva-Vo-KYz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -122,6 +134,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="connectionLabel" destination="5PG-kn-YsT" id="kea-M3-5tM"/>
+                        <outlet property="tiltButton" destination="whK-jB-fZI" id="mha-S5-7wA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -135,6 +148,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dot_on.png" width="64" height="64"/>
         <image name="gear.png" width="32" height="32"/>
         <image name="mood-angry.png" width="93" height="93"/>
         <image name="mood-happy.png" width="93" height="93"/>

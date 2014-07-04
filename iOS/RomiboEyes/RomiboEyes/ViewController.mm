@@ -17,8 +17,10 @@ NSString * const faceCascadeName = @"haarcascade_frontalface_default";
 NSString * const faceCascadePath = [[NSBundle mainBundle] pathForResource:faceCascadeName ofType:@"xml"];
 CascadeClassifier faceCascade;
 
+@protocol CvVideoCameraDelegate;
 
 @interface ViewController ()
+
 
 @end
 
@@ -26,22 +28,25 @@ CascadeClassifier faceCascade;
 @implementation ViewController
 
 @synthesize camera;
-
+@synthesize imageView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:imageView];
 
     self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.2 blue:0.2 alpha:1.0];
     
     NSLog(@"Did Load");
     
-    [self setupEyesSubview];
+    [self setupEyes];
     
     [self addCameraButton];
     
-    camera = [[CvVideoCamera alloc] initWithParentView:[[UIImageView alloc] initWithFrame:self.view.bounds]];
-    //camera.delegate = self;
+    camera = [[CvVideoCamera alloc] initWithParentView:imageView];
+    camera.delegate = self;
     camera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
     camera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
     if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
@@ -55,18 +60,18 @@ CascadeClassifier faceCascade;
     camera.grayscaleMode = NO;
 }
 
-- (void)setupEyesSubview
+- (void)setupEyes
 {
     CGFloat height = self.view.bounds.size.width;  // In landscape
     CGFloat width = self.view.bounds.size.height;
 
-    eyesView = [[EyesView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    eyesView = [[EyesView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     [self.view addSubview:eyesView];
     
-    Eye *eye1 = [[Eye alloc] initWithFrame:CGRectMake(110, 60, 80, height - 110)];
+    eye1 = [[Eye alloc] initWithFrame:CGRectMake(110, 60, 80, height - 110)];
     [eyesView addSubview:eye1];
     
-    Eye *eye2 = [[Eye alloc] initWithFrame:CGRectMake(width - 190, 60, 80, height - 110)];
+    eye2 = [[Eye alloc] initWithFrame:CGRectMake(width - 190, 60, 80, height - 110)];
     [eyesView addSubview:eye2];
 }
 
@@ -98,14 +103,25 @@ CascadeClassifier faceCascade;
     
     bitwise_not(grayFrame, grayFrame);
 
-    faceCascade.detectMultiScale(grayFrame, faceRects);
+    faceCascade.detectMultiScale(grayFrame, faceRects, 1.1, 3, 0, cv::Size(20,20));
     
     for(unsigned int r = 0; r < faceRects.size(); ++r) {
-        NSLog(@"%i", faceRects[r].x);
+        [self moveEyesForX:faceRects[r].x Y:0];
+        NSLog(@"*");
+
     }
-    
 }
 
+- (void)moveEyesForX:(int)x Y:(int)y
+{
+    CGFloat horizontalMovement = 30 * ((CGFloat)x / 176 - 1);
+//    [UIView animateWithDuration:0.1
+//                     animations:^ {
+                         self.imageView.center = CGPointMake(eye1.originalCenter.x + horizontalMovement, eye1.originalCenter.y);
+//                     }];
+//    [eye1 moveX:horizontalMovement Y:y];
+
+}
 
 - (void)didReceiveMemoryWarning
 {

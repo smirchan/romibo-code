@@ -14,12 +14,14 @@
 @interface ViewController : UIViewController <CvVideoCameraDelegate>
 {
     EyesView *eyesView;
+    Eye *eye1, *eye2;
     UIButton *cameraButton;
+
 }
 
 @property CvVideoCamera *camera;
-
-- (void)setupEyesSubview;
+@property UIImageView *imageView;
+- (void)setupEyes;
 - (void)addCameraButton;
 - (void)startCamera:(UIButton *)button;
 @end

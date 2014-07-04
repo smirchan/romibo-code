@@ -11,7 +11,8 @@
 
 @implementation DrivingNubView
 
-@synthesize  cmdDelegate, appDelegate;
+@synthesize cmdDelegate, appDelegate;
+@synthesize motionManager;
 
 
 - (id)init
@@ -20,6 +21,7 @@
     {
         self.userInteractionEnabled = YES;
         self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        motionManager = [[CMMotionManager alloc] init];
     }
     
     return self;
@@ -119,6 +121,34 @@
     
     return j;
     
+}
+
+
+- (void)startAccelerometer
+{
+    __block CGRect f = [self frame];
+
+    if(self.motionManager.accelerometerAvailable) {
+        [self.motionManager setAccelerometerUpdateInterval:0.03];
+        [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
+            
+            f.origin.x = 100 + 120 * accelerometerData.acceleration.x;
+            f.origin.y = 100 - 120 * accelerometerData.acceleration.y;
+            NSLog(@"Center X: %f", self.center.x);
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:0.03];
+            [self setFrame:f];
+            [UIView commitAnimations];
+            [self calcDriveCoordinates:self.center.x:self.center.y];
+
+        }];
+    } else NSLog(@"Accelerometer Unavailable");
+    
+}
+
+- (void)stopAccelerometer
+{
+    [self.motionManager stopAccelerometerUpdates];
 }
 
 

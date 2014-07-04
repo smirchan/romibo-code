@@ -10,11 +10,14 @@
 
 @implementation Eye
 
+@synthesize originalCenter;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
+        originalCenter = self.center;
     }
     return self;
 }
@@ -27,5 +30,10 @@
     CGContextFillEllipseInRect(context, eyeRect);
 }
 
+- (void)moveX: (CGFloat)x Y:(CGFloat)y
+{
+
+    NSLog(@"(%f)", self.center.x);
+}
 
 @end

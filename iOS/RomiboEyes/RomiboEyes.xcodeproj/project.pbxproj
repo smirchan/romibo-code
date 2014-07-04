@@ -116,6 +116,7 @@
 				D141B9A6195B196B000C2719 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		D141B9A6195B196B000C2719 /* Products */ = {
 			isa = PBXGroup;
