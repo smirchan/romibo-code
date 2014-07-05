@@ -123,6 +123,8 @@
                                 </state>
                                 <connections>
                                     <action selector="tiltClicked:" destination="2" eventType="touchDown" id="SLL-hb-UhA"/>
+                                    <action selector="tiltRaised:" destination="2" eventType="touchDragExit" id="CTf-QD-VqZ"/>
+                                    <action selector="tiltRaised:" destination="2" eventType="touchUpOutside" id="Vtb-BL-2kE"/>
                                     <action selector="tiltRaised:" destination="2" eventType="touchUpInside" id="mva-Vo-KYz"/>
                                 </connections>
                             </button>

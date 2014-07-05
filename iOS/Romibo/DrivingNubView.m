@@ -59,6 +59,7 @@
     
 }
 
+
 -(void)calcDriveCoordinates :(int)x :(int)y
 {
     float fx = x;
@@ -126,19 +127,18 @@
 
 - (void)startAccelerometer
 {
-    __block CGRect f = [self frame];
+    __block CGRect newFrame = [self frame];
 
     if(self.motionManager.accelerometerAvailable) {
         [self.motionManager setAccelerometerUpdateInterval:0.03];
         [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
             
-            f.origin.x = 100 + 120 * accelerometerData.acceleration.x;
-            f.origin.y = 100 - 120 * accelerometerData.acceleration.y;
-            NSLog(@"Center X: %f", self.center.x);
-            [UIView beginAnimations:nil context:nil];
-            [UIView setAnimationDuration:0.03];
-            [self setFrame:f];
-            [UIView commitAnimations];
+            newFrame.origin.x = CGRectGetMidX(self.superview.bounds) + 0.5 * self.superview.bounds.size.width * accelerometerData.acceleration.x;
+            newFrame.origin.y = CGRectGetMidY(self.superview.bounds) - 0.5 * self.superview.bounds.size.height * accelerometerData.acceleration.y;
+            [UIView animateWithDuration:0.03
+                             animations:^{
+                                 [self setFrame:newFrame];
+                             }];
             [self calcDriveCoordinates:self.center.x:self.center.y];
 
         }];
@@ -149,12 +149,20 @@
 - (void)stopAccelerometer
 {
     [self.motionManager stopAccelerometerUpdates];
+    [UIView animateWithDuration:0.2
+                     animations:^{
+                         self.center = CGPointMake(CGRectGetMidX(self.superview.bounds), CGRectGetMidY(self.superview.bounds));
+                     }];
+    [self calcDriveCoordinates:0:0];
 }
 
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    self.center = CGPointMake(CGRectGetMidX(self.superview.bounds), CGRectGetMidY(self.superview.bounds));
+    [UIView animateWithDuration:0.2
+                     animations:^{
+                         self.center = CGPointMake(CGRectGetMidX(self.superview.bounds), CGRectGetMidY(self.superview.bounds));
+                     }];
     [[appDelegate romibo] sendDriveCmd:0:0];
 }
 
