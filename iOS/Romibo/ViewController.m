@@ -221,9 +221,9 @@
 -(void)setConnectionStatus
 {
     if ([[appDelegate romibo] isConnected])
-        [connectionLabel setText:@"Connection OK"];
+        [connectionLabel setText:@"Connected"];
     else
-        [connectionLabel setText:@"Not Connected"];
+        [connectionLabel setText:@"Not connected"];
 }
 
 -(void)closePopup

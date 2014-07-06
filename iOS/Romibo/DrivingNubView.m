@@ -39,19 +39,7 @@
     CGPoint newPt = CGPointMake(self.center.x + (activePt.x - currentPt.x), 
                                 self.center.y + (activePt.y - currentPt.y));
     
-    float midPointX = CGRectGetMidX(self.bounds);
-    
-    if (newPt.x > self.superview.bounds.size.width - midPointX)
-        newPt.x = self.superview.bounds.size.width - midPointX;
-    else if (newPt.x < midPointX)
-        newPt.x = midPointX;
-    
-    float midPointY = CGRectGetMidY(self.bounds);
-    
-    if (newPt.y > self.superview.bounds.size.height - midPointY)
-        newPt.y = self.superview.bounds.size.height - midPointY;
-    else if (newPt.y < midPointY)
-        newPt.y = midPointY;
+    newPt = [self clipPoint:newPt];
     
     self.center = newPt;
     
@@ -59,6 +47,24 @@
     
 }
 
+- (CGPoint)clipPoint:(CGPoint)point
+{
+    float midPointX = CGRectGetMidX(self.bounds);
+    
+    if (point.x > self.superview.bounds.size.width - midPointX)
+        point.x = self.superview.bounds.size.width - midPointX;
+    else if (point.x < midPointX)
+        point.x = midPointX;
+    
+    float midPointY = CGRectGetMidY(self.bounds);
+    
+    if (point.y > self.superview.bounds.size.height - midPointY)
+        point.y = self.superview.bounds.size.height - midPointY;
+    else if (point.y < midPointY)
+        point.y = midPointY;
+    
+    return point;
+}
 
 -(void)calcDriveCoordinates :(int)x :(int)y
 {
@@ -127,17 +133,21 @@
 
 - (void)startAccelerometer
 {
-    __block CGRect newFrame = [self frame];
+    __block CGPoint newCenter = [self center];
 
     if(self.motionManager.accelerometerAvailable) {
-        [self.motionManager setAccelerometerUpdateInterval:0.03];
+        [self.motionManager setAccelerometerUpdateInterval:0.05];
         [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
             
-            newFrame.origin.x = CGRectGetMidX(self.superview.bounds) + 0.5 * self.superview.bounds.size.width * accelerometerData.acceleration.x;
-            newFrame.origin.y = CGRectGetMidY(self.superview.bounds) - 0.5 * self.superview.bounds.size.height * accelerometerData.acceleration.y;
-            [UIView animateWithDuration:0.03
+            //accelerometer data is smoothed and mapped to point
+            newCenter.x = CGRectGetMidX(self.superview.bounds) + self.superview.bounds.size.width * 30 * powf(accelerometerData.acceleration.x, 3);
+            newCenter.y = CGRectGetMidY(self.superview.bounds) - self.superview.bounds.size.height * 30 * powf(accelerometerData.acceleration.y, 3);
+            
+            newCenter = [self clipPoint:newCenter];
+            
+            [UIView animateWithDuration:0.05
                              animations:^{
-                                 [self setFrame:newFrame];
+                                 [self setCenter:newCenter];
                              }];
             [self calcDriveCoordinates:self.center.x:self.center.y];
 
@@ -153,7 +163,7 @@
                      animations:^{
                          self.center = CGPointMake(CGRectGetMidX(self.superview.bounds), CGRectGetMidY(self.superview.bounds));
                      }];
-    [self calcDriveCoordinates:0:0];
+    [[appDelegate romibo] sendDriveCmd:0:0];
 }
 
 
