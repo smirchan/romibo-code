@@ -18,7 +18,6 @@
 #import "ButtonScrollView.h"
 #import "AppDelegate.h"
 
-
 @implementation ViewController 
 
 @synthesize appDelegate;
@@ -36,8 +35,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background-01.png"]];
-    
+    self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.69 blue:0.168 alpha:1.0];
     
     [self closePopup];
     
@@ -68,7 +66,7 @@
     
     ButtonScrollView* buttonScrollController = [[ButtonScrollView alloc] initWithNibName:@"ButtonScrollView" bundle:[NSBundle mainBundle]];
     
-    buttonScrollController.view.frame = CGRectMake(0, 552, self.view.frame.size.width, self.view.frame.size.height);
+    buttonScrollController.view.frame = CGRectMake(0, 577, self.view.frame.size.width, self.view.frame.size.height);
     
     [buttonScrollController loadButtonPages:@"screens"];
     
@@ -138,7 +136,7 @@
     
     tNub = [[HeadTiltNubView alloc] init];
     
-    headTiltView.frame = CGRectMake(400, 215, 338, 338);
+    headTiltView.frame = CGRectMake(400, 250, 338, 338);
     
     tNub.center = CGPointMake(CGRectGetMidX(headTiltView.bounds), CGRectGetMidY(headTiltView.bounds));
     
@@ -158,7 +156,7 @@
     
     dNub = [[DrivingNubView alloc] init];
     
-    drivingView.frame = CGRectMake(28, 215, 338, 338);
+    drivingView.frame = CGRectMake(28, 250, 338, 338);
     
     dNub.center = CGPointMake(CGRectGetMidX(drivingView.bounds), CGRectGetMidY(drivingView.bounds));
     
@@ -243,6 +241,8 @@
     NSLog(@"Full command: %@", emotion);
     
     [[appDelegate romibo] sendString:emotion];
+    
+    self.view.backgroundColor = [UIColor colorWithRed:0.507 green:0.729 blue:0.187 alpha:1.0];
 }
 
 
@@ -254,6 +254,8 @@
     NSLog(@"Full command: %@", emotion);
     
     [[appDelegate romibo] sendString:emotion];
+
+    self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.69 blue:0.168 alpha:1.0];
 }
 
 
@@ -264,6 +266,8 @@
     NSLog(@"Full command: %@", emotion);
     
     [[appDelegate romibo] sendString:emotion];
+
+    self.view.backgroundColor = [UIColor colorWithRed:0.89 green:0.08 blue:0.188 alpha:1.0];
 }
 
 
@@ -274,6 +278,8 @@
     NSLog(@"Full command: %@", emotion);
     
     [[appDelegate romibo] sendString:emotion];
+
+    self.view.backgroundColor = [UIColor colorWithRed:0.24 green:0.65 blue:0.80 alpha:1.0];
 }
 
 - (void)dealloc {

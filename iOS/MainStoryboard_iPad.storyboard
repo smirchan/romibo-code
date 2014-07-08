@@ -13,34 +13,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="romibo-logo.png" id="AuU-3t-nYY">
-                                <rect key="frame" x="11" y="10" width="428" height="128"/>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-custom.png" id="otR-jM-E54">
+                                <rect key="frame" x="0.0" y="-2" width="768" height="1026"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="romibo-logo-trans.png" id="AuU-3t-nYY">
+                                <rect key="frame" x="200" y="14" width="369" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bjw-5E-YoD">
-                                <rect key="frame" x="7" y="152" width="131" height="37"/>
+                                <rect key="frame" x="0.0" y="142" width="131" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
-                                <state key="normal" title="  Configure" image="gear.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="⚙  Configure">
+                                    <color key="titleColor" red="0.96278505069999998" green="0.96278505069999998" blue="0.96278505069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="configClicked:" destination="2" eventType="touchDown" id="Chi-gV-AH9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Not connected" lineBreakMode="tailTruncation" minimumFontSize="10" id="5PG-kn-YsT">
-                                <rect key="frame" x="146" y="160" width="121" height="21"/>
+                                <rect key="frame" x="593" y="150" width="121" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="or-logo.png" id="XPO-OK-7jv">
-                                <rect key="frame" x="518" y="892" width="240" height="120"/>
+                                <rect key="frame" x="574" y="937" width="184" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7wh-SV-7Jb">
-                                <rect key="frame" x="700" y="151" width="48" height="42"/>
+                                <rect key="frame" x="728" y="146" width="30" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
@@ -56,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0zQ-Qf-cEw">
-                                <rect key="frame" x="477" y="68" width="70" height="70"/>
+                                <rect key="frame" x="317" y="178" width="63" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="mood-happy.png">
@@ -71,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IfF-Kk-1eM">
-                                <rect key="frame" x="549" y="68" width="70" height="70"/>
+                                <rect key="frame" x="388" y="179" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="mood-sad.png">
@@ -86,7 +94,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="izt-Bu-pFS">
-                                <rect key="frame" x="621" y="68" width="70" height="70"/>
+                                <rect key="frame" x="247" y="179" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="mood-surprised.png">
@@ -101,7 +109,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kBm-ss-rkI">
-                                <rect key="frame" x="691" y="68" width="70" height="70"/>
+                                <rect key="frame" x="458" y="179" width="63" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="mood-angry.png">
@@ -116,9 +124,9 @@
                                 </connections>
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="whK-jB-fZI">
-                                <rect key="frame" x="686" y="216" width="95" height="82"/>
+                                <rect key="frame" x="689" y="181" width="74" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="dot_on.png">
+                                <state key="normal" image="tilt-button.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -151,15 +159,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dot_on.png" width="64" height="64"/>
-        <image name="gear.png" width="32" height="32"/>
+        <image name="background-custom.png" width="768" height="1024"/>
         <image name="mood-angry.png" width="93" height="93"/>
         <image name="mood-happy.png" width="93" height="93"/>
         <image name="mood-sad.png" width="93" height="93"/>
         <image name="mood-surprised.png" width="94" height="93"/>
         <image name="or-logo.png" width="230" height="82"/>
-        <image name="romibo-logo.png" width="375" height="116"/>
+        <image name="romibo-logo-trans.png" width="750" height="232"/>
         <image name="silhouette.png" width="30" height="25"/>
+        <image name="tilt-button.png" width="440" height="436"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

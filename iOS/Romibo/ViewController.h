@@ -68,7 +68,4 @@
 - (void)setupDrivingSubview;
 - (void)setupButtonScrollView;
 
-//accelerometer
-- (void)startAccelerometer;
-
 @end

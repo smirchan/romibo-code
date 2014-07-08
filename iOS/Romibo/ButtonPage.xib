@@ -19,10 +19,11 @@
                     <rect key="frame" x="12" y="14" width="240" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Nod" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Nod" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,10 +37,11 @@
                     <rect key="frame" x="264" y="14" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="It's so nice to see you" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="It's so nice to see you" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,10 +55,11 @@
                     <rect key="frame" x="516" y="14" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Bye bye blackbird" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Bye bye blackbird" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,10 +73,11 @@
                     <rect key="frame" x="11" y="71" width="240" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Bob" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Bob" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,10 +91,11 @@
                     <rect key="frame" x="263" y="72" width="240" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Hava nagila" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Hava nagila" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,10 +109,11 @@
                     <rect key="frame" x="515" y="72" width="240" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Could you tell me more" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Could you tell me more" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -121,10 +127,11 @@
                     <rect key="frame" x="12" y="128" width="240" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Shalom" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Shalom" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,10 +145,11 @@
                     <rect key="frame" x="264" y="128" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="In the mood (glenn miller)" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="In the mood (glenn miller)" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,10 +163,11 @@
                     <rect key="frame" x="516" y="128" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="What happened next" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="What happened next" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,10 +181,11 @@
                     <rect key="frame" x="12" y="185" width="240" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="How are you feeling" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="How are you feeling" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -189,10 +199,11 @@
                     <rect key="frame" x="264" y="186" width="240" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Show me the way to go home" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Show me the way to go home" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,10 +217,11 @@
                     <rect key="frame" x="516" y="186" width="240" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="What was that" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="What was that" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -223,10 +235,11 @@
                     <rect key="frame" x="11" y="242" width="240" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="I hope you feel better soon" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="I hope you feel better soon" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,10 +253,11 @@
                     <rect key="frame" x="263" y="242" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Let me call you sweetheart" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Let me call you sweetheart" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,10 +271,11 @@
                     <rect key="frame" x="515" y="242" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Why is that" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Why is that" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -274,10 +289,11 @@
                     <rect key="frame" x="12" y="299" width="240" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="It was nice talking to you" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="It was nice talking to you" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -291,10 +307,11 @@
                     <rect key="frame" x="264" y="300" width="240" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="You are my sunshine" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="You are my sunshine" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -309,10 +326,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Wow!"/>
                     <gestureRecognizers/>
-                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                    <state key="normal" title="Wow" backgroundImage="button-02.png">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Wow" backgroundImage="button-trans.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,7 +343,7 @@
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="245">
                     <rect key="frame" x="20" y="364" width="504" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -426,6 +444,6 @@
         </pongPressGestureRecognizer>
     </objects>
     <resources>
-        <image name="button-02.png" width="334" height="59"/>
+        <image name="button-trans.png" width="413" height="116"/>
     </resources>
 </document>

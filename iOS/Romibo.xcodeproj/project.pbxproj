@@ -38,7 +38,6 @@
 		63DD0E9A14B5393B002FDC2F /* button-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DD0E8C14B5393B002FDC2F /* button-02.png */; };
 		63DD0E9B14B5393B002FDC2F /* emotion-base-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DD0E8D14B5393B002FDC2F /* emotion-base-02.png */; };
 		63DD0E9C14B5393B002FDC2F /* emotion-nub-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DD0E8E14B5393B002FDC2F /* emotion-nub-02.png */; };
-		63DD0E9D14B5393B002FDC2F /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DD0E8F14B5393B002FDC2F /* gear.png */; };
 		63DD0E9E14B5393B002FDC2F /* movement-base-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DD0E9014B5393B002FDC2F /* movement-base-02.png */; };
 		63DD0E9F14B5393B002FDC2F /* movement-nub-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DD0E9114B5393B002FDC2F /* movement-nub-02.png */; };
 		63DD0EA014B5393B002FDC2F /* or-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DD0E9214B5393B002FDC2F /* or-logo.png */; };
@@ -55,7 +54,6 @@
 		7419373017691B180012A630 /* screens in Resources */ = {isa = PBXBuildFile; fileRef = 7419372F17691B180012A630 /* screens */; };
 		7438733017554C2B0069EEC9 /* HeadTiltNubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438732F17554C2B0069EEC9 /* HeadTiltNubView.m */; };
 		7438733E1759527C0069EEC9 /* tiltBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7438733C1759527C0069EEC9 /* tiltBackground.png */; };
-		7438733F1759527C0069EEC9 /* tiltBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7438733D1759527C0069EEC9 /* tiltBackground@2x.png */; };
 		74387341175956AD0069EEC9 /* driveBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 74387340175956AD0069EEC9 /* driveBackground.png */; };
 		743873461759579F0069EEC9 /* mood-sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 743873421759579F0069EEC9 /* mood-sad.png */; };
 		743873471759579F0069EEC9 /* mood-surprised.png in Resources */ = {isa = PBXBuildFile; fileRef = 743873431759579F0069EEC9 /* mood-surprised.png */; };
@@ -84,8 +82,13 @@
 		74D1A827170BA8B3007E8CF9 /* movement_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A826170BA8B3007E8CF9 /* movement_base.png */; };
 		74D1A829170F5BD0007E8CF9 /* RomiboAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */; };
 		74D1A82B170F5BDE007E8CF9 /* RomiboAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */; };
+		D10F96A3196C57C20082C043 /* tilt-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D10F96A2196C57C20082C043 /* tilt-button.png */; };
 		D12E77A619670A1D008A7381 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12E77A519670A1D008A7381 /* CoreMotion.framework */; };
 		D141B993195B104F000C2719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D141B992195B104F000C2719 /* Images.xcassets */; };
+		D1CC4083196B2C6600BB7D3D /* background-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC4082196B2C6600BB7D3D /* background-custom.png */; };
+		D1CC4085196B3ABD00BB7D3D /* romibo-logo-trans.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */; };
+		D1CC408C196C535500BB7D3D /* button-4.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC408B196C535500BB7D3D /* button-4.png */; };
+		D1CC408E196C54B400BB7D3D /* button-trans.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC408D196C54B400BB7D3D /* button-trans.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,7 +166,6 @@
 		63DD0E8C14B5393B002FDC2F /* button-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-02.png"; path = "imgs/button-02.png"; sourceTree = "<group>"; };
 		63DD0E8D14B5393B002FDC2F /* emotion-base-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emotion-base-02.png"; path = "imgs/emotion-base-02.png"; sourceTree = "<group>"; };
 		63DD0E8E14B5393B002FDC2F /* emotion-nub-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emotion-nub-02.png"; path = "imgs/emotion-nub-02.png"; sourceTree = "<group>"; };
-		63DD0E8F14B5393B002FDC2F /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear.png; path = imgs/gear.png; sourceTree = "<group>"; };
 		63DD0E9014B5393B002FDC2F /* movement-base-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "movement-base-02.png"; path = "imgs/movement-base-02.png"; sourceTree = "<group>"; };
 		63DD0E9114B5393B002FDC2F /* movement-nub-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "movement-nub-02.png"; path = "imgs/movement-nub-02.png"; sourceTree = "<group>"; };
 		63DD0E9214B5393B002FDC2F /* or-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "or-logo.png"; path = "imgs/or-logo.png"; sourceTree = "<group>"; };
@@ -183,7 +185,6 @@
 		7438732E17554C2B0069EEC9 /* HeadTiltNubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTiltNubView.h; sourceTree = "<group>"; };
 		7438732F17554C2B0069EEC9 /* HeadTiltNubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadTiltNubView.m; sourceTree = "<group>"; };
 		7438733C1759527C0069EEC9 /* tiltBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tiltBackground.png; path = imgs/tiltBackground.png; sourceTree = "<group>"; };
-		7438733D1759527C0069EEC9 /* tiltBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tiltBackground@2x.png"; path = "imgs/tiltBackground@2x.png"; sourceTree = "<group>"; };
 		74387340175956AD0069EEC9 /* driveBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driveBackground.png; path = imgs/driveBackground.png; sourceTree = "<group>"; };
 		743873421759579F0069EEC9 /* mood-sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mood-sad.png"; path = "imgs/mood-sad.png"; sourceTree = "<group>"; };
 		743873431759579F0069EEC9 /* mood-surprised.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mood-surprised.png"; path = "imgs/mood-surprised.png"; sourceTree = "<group>"; };
@@ -217,9 +218,14 @@
 		74D1A826170BA8B3007E8CF9 /* movement_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movement_base.png; path = imgs/movement_base.png; sourceTree = "<group>"; };
 		74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RomiboAppIcon.png; path = imgs/RomiboAppIcon.png; sourceTree = "<group>"; };
 		74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RomiboAppIcon.png; sourceTree = "<group>"; };
+		D10F96A2196C57C20082C043 /* tilt-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tilt-button.png"; sourceTree = "<group>"; };
 		D12E77A519670A1D008A7381 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D141B992195B104F000C2719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RomiboEyes.xcodeproj; path = RomiboEyes/RomiboEyes.xcodeproj; sourceTree = "<group>"; };
+		D1CC4082196B2C6600BB7D3D /* background-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-custom.png"; sourceTree = "<group>"; };
+		D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "romibo-logo-trans.png"; sourceTree = "<group>"; };
+		D1CC408B196C535500BB7D3D /* button-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-4.png"; sourceTree = "<group>"; };
+		D1CC408D196C54B400BB7D3D /* button-trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-trans.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -404,6 +410,8 @@
 		63DD0E2E14B5386E002FDC2F /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */,
+				D1CC4082196B2C6600BB7D3D /* background-custom.png */,
 				743A146E178E15D6007AAEB5 /* arrow_up.png */,
 				743A146F178E15D6007AAEB5 /* arrow_right.png */,
 				743A1470178E15D6007AAEB5 /* arrow_down.png */,
@@ -414,7 +422,6 @@
 				743873451759579F0069EEC9 /* mood-angry.png */,
 				74387340175956AD0069EEC9 /* driveBackground.png */,
 				7438733C1759527C0069EEC9 /* tiltBackground.png */,
-				7438733D1759527C0069EEC9 /* tiltBackground@2x.png */,
 				74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */,
 				74D1A826170BA8B3007E8CF9 /* movement_base.png */,
 				74D1A819170643BD007E8CF9 /* ActionButton.png */,
@@ -428,9 +435,11 @@
 				63DD0E8A14B5393B002FDC2F /* background-02.png */,
 				63DD0E8B14B5393B002FDC2F /* background-03.png */,
 				63DD0E8C14B5393B002FDC2F /* button-02.png */,
+				D1CC408D196C54B400BB7D3D /* button-trans.png */,
+				D1CC408B196C535500BB7D3D /* button-4.png */,
+				D10F96A2196C57C20082C043 /* tilt-button.png */,
 				63DD0E8D14B5393B002FDC2F /* emotion-base-02.png */,
 				63DD0E8E14B5393B002FDC2F /* emotion-nub-02.png */,
-				63DD0E8F14B5393B002FDC2F /* gear.png */,
 				63DD0E9014B5393B002FDC2F /* movement-base-02.png */,
 				63DD0E9114B5393B002FDC2F /* movement-nub-02.png */,
 				63DD0E9214B5393B002FDC2F /* or-logo.png */,
@@ -553,14 +562,15 @@
 				63DD0E9A14B5393B002FDC2F /* button-02.png in Resources */,
 				63DD0E9B14B5393B002FDC2F /* emotion-base-02.png in Resources */,
 				63DD0E9C14B5393B002FDC2F /* emotion-nub-02.png in Resources */,
-				63DD0E9D14B5393B002FDC2F /* gear.png in Resources */,
 				63DD0E9E14B5393B002FDC2F /* movement-base-02.png in Resources */,
 				63DD0E9F14B5393B002FDC2F /* movement-nub-02.png in Resources */,
 				63DD0EA014B5393B002FDC2F /* or-logo.png in Resources */,
+				D1CC408C196C535500BB7D3D /* button-4.png in Resources */,
 				63DD0EA114B5393B002FDC2F /* romibo-logo.png in Resources */,
 				63DD0EA214B5393B002FDC2F /* stripe.png in Resources */,
 				63DD0EA314B5393B002FDC2F /* volume-base-01.png in Resources */,
 				63DD0EA414B5393B002FDC2F /* volume-nub-01.png in Resources */,
+				D1CC4083196B2C6600BB7D3D /* background-custom.png in Resources */,
 				63DD0EA714B54C1F002FDC2F /* sound_left.png in Resources */,
 				63DD0EA814B54C1F002FDC2F /* sound_right.png in Resources */,
 				63AEE88414B91C2300A8C8DC /* emotion-base-03.png in Resources */,
@@ -568,6 +578,7 @@
 				7480608716FD31270023A26B /* ChildBaseView.xib in Resources */,
 				7480608C16FD41F50023A26B /* silhouette.png in Resources */,
 				748060BE16FE71820023A26B /* dot_off.png in Resources */,
+				D1CC4085196B3ABD00BB7D3D /* romibo-logo-trans.png in Resources */,
 				748060BF16FE71820023A26B /* dot_on.png in Resources */,
 				74D1A81B170643BD007E8CF9 /* ActionButton.png in Resources */,
 				74D1A827170BA8B3007E8CF9 /* movement_base.png in Resources */,
@@ -575,14 +586,15 @@
 				74D1A82B170F5BDE007E8CF9 /* RomiboAppIcon.png in Resources */,
 				745DD6C81711FEF800A14AD2 /* ConfigViewController.xib in Resources */,
 				7438733E1759527C0069EEC9 /* tiltBackground.png in Resources */,
-				7438733F1759527C0069EEC9 /* tiltBackground@2x.png in Resources */,
 				74387341175956AD0069EEC9 /* driveBackground.png in Resources */,
 				743873461759579F0069EEC9 /* mood-sad.png in Resources */,
 				743873471759579F0069EEC9 /* mood-surprised.png in Resources */,
 				743873481759579F0069EEC9 /* mood-happy.png in Resources */,
+				D1CC408E196C54B400BB7D3D /* button-trans.png in Resources */,
 				743873491759579F0069EEC9 /* mood-angry.png in Resources */,
 				74193725175E777D0012A630 /* ButtonPage.xib in Resources */,
 				7419372A1767A09A0012A630 /* ButtonScrollView.xib in Resources */,
+				D10F96A3196C57C20082C043 /* tilt-button.png in Resources */,
 				7419373017691B180012A630 /* screens in Resources */,
 				743A1418178CA6E5007AAEB5 /* SimpleButtonPage.xib in Resources */,
 				743A141D178CAF1C007AAEB5 /* simple_screens in Resources */,
