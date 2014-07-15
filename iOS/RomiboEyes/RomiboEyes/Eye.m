@@ -32,8 +32,8 @@
 
 - (void)moveX: (CGFloat)x Y:(CGFloat)y
 {
-
-    NSLog(@"(%f)", self.center.x);
+    CGRect newFrame = CGRectMake( self.frame.origin.x + x, self.frame.origin.y - y, self.frame.size.width, self.frame.size.width);
+    [self setFrame:newFrame];
 }
 
 @end

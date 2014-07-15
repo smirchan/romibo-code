@@ -15,8 +15,9 @@
 
 - (id)init
 {   
-    if (self = [super initWithImage:[UIImage imageNamed:@"emotion-nub-02.png"]])
+    if (self = [super initWithFrame:CGRectMake(0, 0, 90, 90)])
     {
+        self.image = [UIImage imageNamed:@"emotion-nub-03.png"];
         self.userInteractionEnabled = YES;
         self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     }

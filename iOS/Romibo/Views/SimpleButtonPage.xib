@@ -15,103 +15,67 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" alpha="0.59999999999999964" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="4">
-                    <rect key="frame" x="20" y="161" width="349" height="80"/>
+                <button opaque="NO" alpha="0.59999999999999964" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4">
+                    <rect key="frame" x="35" y="52" width="337" height="69"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="39"/>
                     <state key="normal" backgroundImage="button-4.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Dance">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="39" name="HelveticaNeue-Bold"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="buttonClicked:" destination="-1" eventType="touchDown" id="39"/>
                     </connections>
                 </button>
-                <button opaque="NO" alpha="0.59999999999999964" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="5">
-                    <rect key="frame" x="399" y="274" width="349" height="80"/>
+                <button opaque="NO" alpha="0.59999999999999964" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5">
+                    <rect key="frame" x="35" y="260" width="337" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="39"/>
                     <state key="normal" backgroundImage="button-4.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Thank you">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="39" name="HelveticaNeue-Bold"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="buttonClicked:" destination="-1" eventType="touchDown" id="42"/>
                     </connections>
                 </button>
-                <button opaque="NO" alpha="0.59999999999999964" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="6">
-                    <rect key="frame" x="399" y="161" width="349" height="80"/>
+                <button opaque="NO" alpha="0.59999999999999964" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6">
+                    <rect key="frame" x="396" y="156" width="337" height="69"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="39"/>
                     <state key="normal" backgroundImage="button-4.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Goodbye">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="39" name="HelveticaNeue-Bold"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="buttonClicked:" destination="-1" eventType="touchDown" id="41"/>
                     </connections>
                 </button>
-                <button opaque="NO" alpha="0.59999999999999964" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="7">
-                    <rect key="frame" x="399" y="45" width="349" height="80"/>
+                <button opaque="NO" alpha="0.59999999999999964" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7">
+                    <rect key="frame" x="35" y="156" width="337" height="69"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="39"/>
                     <state key="normal" backgroundImage="button-4.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Shalom">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="39" name="HelveticaNeue-Bold"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="buttonClicked:" destination="-1" eventType="touchDown" id="40"/>
                     </connections>
                 </button>
-                <button opaque="NO" alpha="0.59999999999999964" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="8">
-                    <rect key="frame" x="20" y="45" width="349" height="80"/>
+                <button opaque="NO" alpha="0.59999999999999964" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8">
+                    <rect key="frame" x="396" y="52" width="337" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="39"/>
                     <state key="normal" backgroundImage="button-4.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Bob">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="39" name="HelveticaNeue-Bold"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="buttonClicked:" destination="-1" eventType="touchDown" id="38"/>
                     </connections>
                 </button>
-                <button opaque="NO" alpha="0.59999999999999964" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="9">
-                    <rect key="frame" x="20" y="274" width="349" height="80"/>
+                <button opaque="NO" alpha="0.59999999999999964" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9">
+                    <rect key="frame" x="396" y="260" width="337" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="39"/>
                     <state key="normal" backgroundImage="button-4.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Nod">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="39" name="HelveticaNeue-Bold"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="buttonClicked:" destination="-1" eventType="touchDown" id="37"/>

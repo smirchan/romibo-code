@@ -84,7 +84,7 @@
     NSLog(@"Changing shell...");
     
     if (![childView isBeingPresented])
-        [self presentModalViewController:childView animated:YES];
+        [self presentViewController:childView animated:YES completion:nil];
 
 }
 
@@ -132,7 +132,7 @@
 
 -(void)setupHeadTiltSubview
 {
-    UIImageView* headTiltView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tiltBackground.png"]];
+    UIImageView* headTiltView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tiltBackground-02.png"]];
     
     tNub = [[HeadTiltNubView alloc] init];
     
@@ -152,7 +152,7 @@
 
 -(void)setupDrivingSubview
 {
-    UIImageView* drivingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"driveBackground.png"]];
+    UIImageView* drivingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"driveBackground-02.png"]];
     
     dNub = [[DrivingNubView alloc] init];
     

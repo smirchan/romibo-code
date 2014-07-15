@@ -6,8 +6,8 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface RomiboTests : SenTestCase
+@interface RomiboTests : XCTestCase
 
 @end

@@ -15,6 +15,7 @@ using namespace cv;
 
 NSString * const faceCascadeName = @"haarcascade_frontalface_default";
 NSString * const faceCascadePath = [[NSBundle mainBundle] pathForResource:faceCascadeName ofType:@"xml"];
+
 CascadeClassifier faceCascade;
 
 @protocol CvVideoCameraDelegate;
@@ -64,14 +65,21 @@ CascadeClassifier faceCascade;
 {
     CGFloat height = self.view.bounds.size.width;  // In landscape
     CGFloat width = self.view.bounds.size.height;
-
-    eyesView = [[EyesView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-    [self.view addSubview:eyesView];
     
-    eye1 = [[Eye alloc] initWithFrame:CGRectMake(110, 60, 80, height - 110)];
+    eyesView = [[EyesView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    [self.view addSubview:eyesView];
+
+    CGFloat eyeHeight = 0.6 * height;
+    CGFloat eyeWidth = 0.125 * width;
+    
+    CGFloat eyeMarginVertical = 60;
+    CGFloat eyeMarginHorizontal  = (width - 2 * eyeWidth) / 3;
+    
+    
+    eye1 = [[Eye alloc] initWithFrame:CGRectMake( eyeMarginHorizontal, (height - eyeHeight) / 2, eyeWidth, eyeHeight )];
     [eyesView addSubview:eye1];
     
-    eye2 = [[Eye alloc] initWithFrame:CGRectMake(width - 190, 60, 80, height - 110)];
+    eye2 = [[Eye alloc] initWithFrame:CGRectMake( 2 * eyeMarginHorizontal + eyeWidth, (height - eyeHeight) / 2, eyeWidth, eyeHeight )];
     [eyesView addSubview:eye2];
 }
 
@@ -106,22 +114,12 @@ CascadeClassifier faceCascade;
     faceCascade.detectMultiScale(grayFrame, faceRects, 1.1, 3, 0, cv::Size(20,20));
     
     for(unsigned int r = 0; r < faceRects.size(); ++r) {
-        [self moveEyesForX:faceRects[r].x Y:0];
-        NSLog(@"*");
+        [eye1 moveX:10 Y:10];
 
     }
 }
 
-- (void)moveEyesForX:(int)x Y:(int)y
-{
-    CGFloat horizontalMovement = 30 * ((CGFloat)x / 176 - 1);
-//    [UIView animateWithDuration:0.1
-//                     animations:^ {
-                         self.imageView.center = CGPointMake(eye1.originalCenter.x + horizontalMovement, eye1.originalCenter.y);
-//                     }];
-//    [eye1 moveX:horizontalMovement Y:y];
 
-}
 
 - (void)didReceiveMemoryWarning
 {

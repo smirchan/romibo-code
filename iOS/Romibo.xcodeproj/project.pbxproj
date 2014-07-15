@@ -27,7 +27,6 @@
 		63DBAFDC14B0126D00EAD344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DBAFDB14B0126D00EAD344 /* main.m */; };
 		63DBAFE014B0126D00EAD344 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DBAFDF14B0126D00EAD344 /* AppDelegate.m */; };
 		63DBAFE914B0126D00EAD344 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DBAFE814B0126D00EAD344 /* ViewController.m */; };
-		63DBAFF114B0126D00EAD344 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DBAFF014B0126D00EAD344 /* SenTestingKit.framework */; };
 		63DBAFF214B0126D00EAD344 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DBAFCF14B0126D00EAD344 /* UIKit.framework */; };
 		63DBAFF314B0126D00EAD344 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DBAFD114B0126D00EAD344 /* Foundation.framework */; };
 		63DBAFFB14B0126D00EAD344 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63DBAFF914B0126D00EAD344 /* InfoPlist.strings */; };
@@ -85,6 +84,11 @@
 		D10F96A3196C57C20082C043 /* tilt-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D10F96A2196C57C20082C043 /* tilt-button.png */; };
 		D12E77A619670A1D008A7381 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12E77A519670A1D008A7381 /* CoreMotion.framework */; };
 		D141B993195B104F000C2719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D141B992195B104F000C2719 /* Images.xcassets */; };
+		D1B3443C196F42AE0002917F /* driveBackground-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B3443B196F42AE0002917F /* driveBackground-02.png */; };
+		D1B34440196F42B40002917F /* tiltBackground-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B3443F196F42B40002917F /* tiltBackground-02.png */; };
+		D1B34442196F43680002917F /* movement-nub-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34441196F43680002917F /* movement-nub-03.png */; };
+		D1B34444196F43A30002917F /* emotion-nub-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34443196F43A30002917F /* emotion-nub-03.png */; };
+		D1B34447196F477D0002917F /* movement-base-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34446196F477D0002917F /* movement-base-02.png */; };
 		D1CC4083196B2C6600BB7D3D /* background-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC4082196B2C6600BB7D3D /* background-custom.png */; };
 		D1CC4085196B3ABD00BB7D3D /* romibo-logo-trans.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */; };
 		D1CC408C196C535500BB7D3D /* button-4.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC408B196C535500BB7D3D /* button-4.png */; };
@@ -154,8 +158,7 @@
 		63DBAFDF14B0126D00EAD344 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		63DBAFE714B0126D00EAD344 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		63DBAFE814B0126D00EAD344 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		63DBAFEF14B0126D00EAD344 /* RomiboTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomiboTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63DBAFF014B0126D00EAD344 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		63DBAFEF14B0126D00EAD344 /* RomiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DBAFF814B0126D00EAD344 /* RomiboTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RomiboTests-Info.plist"; sourceTree = "<group>"; };
 		63DBAFFA14B0126D00EAD344 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63DBAFFC14B0126D00EAD344 /* RomiboTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RomiboTests.h; sourceTree = "<group>"; };
@@ -222,6 +225,11 @@
 		D12E77A519670A1D008A7381 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D141B992195B104F000C2719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RomiboEyes.xcodeproj; path = RomiboEyes/RomiboEyes.xcodeproj; sourceTree = "<group>"; };
+		D1B3443B196F42AE0002917F /* driveBackground-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "driveBackground-02.png"; sourceTree = "<group>"; };
+		D1B3443F196F42B40002917F /* tiltBackground-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiltBackground-02.png"; sourceTree = "<group>"; };
+		D1B34441196F43680002917F /* movement-nub-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movement-nub-03.png"; sourceTree = "<group>"; };
+		D1B34443196F43A30002917F /* emotion-nub-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emotion-nub-03.png"; sourceTree = "<group>"; };
+		D1B34446196F477D0002917F /* movement-base-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movement-base-02.png"; sourceTree = "<group>"; };
 		D1CC4082196B2C6600BB7D3D /* background-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-custom.png"; sourceTree = "<group>"; };
 		D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "romibo-logo-trans.png"; sourceTree = "<group>"; };
 		D1CC408B196C535500BB7D3D /* button-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-4.png"; sourceTree = "<group>"; };
@@ -246,7 +254,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DBAFF114B0126D00EAD344 /* SenTestingKit.framework in Frameworks */,
 				63DBAFF214B0126D00EAD344 /* UIKit.framework in Frameworks */,
 				63DBAFF314B0126D00EAD344 /* Foundation.framework in Frameworks */,
 			);
@@ -340,7 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				63DBAFCB14B0126D00EAD344 /* Romibo.app */,
-				63DBAFEF14B0126D00EAD344 /* RomiboTests.octest */,
+				63DBAFEF14B0126D00EAD344 /* RomiboTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,7 +361,6 @@
 				63DBAFCF14B0126D00EAD344 /* UIKit.framework */,
 				63DBAFD114B0126D00EAD344 /* Foundation.framework */,
 				63DBAFD314B0126D00EAD344 /* CoreGraphics.framework */,
-				63DBAFF014B0126D00EAD344 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -410,6 +416,10 @@
 		63DD0E2E14B5386E002FDC2F /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				D1B34443196F43A30002917F /* emotion-nub-03.png */,
+				D1B34441196F43680002917F /* movement-nub-03.png */,
+				D1B3443F196F42B40002917F /* tiltBackground-02.png */,
+				D1B3443B196F42AE0002917F /* driveBackground-02.png */,
 				D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */,
 				D1CC4082196B2C6600BB7D3D /* background-custom.png */,
 				743A146E178E15D6007AAEB5 /* arrow_up.png */,
@@ -424,6 +434,7 @@
 				7438733C1759527C0069EEC9 /* tiltBackground.png */,
 				74D1A828170F5BD0007E8CF9 /* RomiboAppIcon.png */,
 				74D1A826170BA8B3007E8CF9 /* movement_base.png */,
+				D1B34446196F477D0002917F /* movement-base-02.png */,
 				74D1A819170643BD007E8CF9 /* ActionButton.png */,
 				748060BC16FE71820023A26B /* dot_off.png */,
 				748060BD16FE71820023A26B /* dot_on.png */,
@@ -496,8 +507,8 @@
 			);
 			name = RomiboTests;
 			productName = RomiboTests;
-			productReference = 63DBAFEF14B0126D00EAD344 /* RomiboTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 63DBAFEF14B0126D00EAD344 /* RomiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -505,7 +516,8 @@
 		63DBAFC214B0126D00EAD344 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 63DBAFC514B0126D00EAD344 /* Build configuration list for PBXProject "Romibo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -555,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63DBAFDA14B0126D00EAD344 /* InfoPlist.strings in Resources */,
+				D1B34447196F477D0002917F /* movement-base-02.png in Resources */,
 				D141B993195B104F000C2719 /* Images.xcassets in Resources */,
 				63DD0E9714B5393B002FDC2F /* background-01.png in Resources */,
 				63DD0E9814B5393B002FDC2F /* background-02.png in Resources */,
@@ -580,10 +593,13 @@
 				748060BE16FE71820023A26B /* dot_off.png in Resources */,
 				D1CC4085196B3ABD00BB7D3D /* romibo-logo-trans.png in Resources */,
 				748060BF16FE71820023A26B /* dot_on.png in Resources */,
+				D1B34444196F43A30002917F /* emotion-nub-03.png in Resources */,
+				D1B3443C196F42AE0002917F /* driveBackground-02.png in Resources */,
 				74D1A81B170643BD007E8CF9 /* ActionButton.png in Resources */,
 				74D1A827170BA8B3007E8CF9 /* movement_base.png in Resources */,
 				74D1A829170F5BD0007E8CF9 /* RomiboAppIcon.png in Resources */,
 				74D1A82B170F5BDE007E8CF9 /* RomiboAppIcon.png in Resources */,
+				D1B34442196F43680002917F /* movement-nub-03.png in Resources */,
 				745DD6C81711FEF800A14AD2 /* ConfigViewController.xib in Resources */,
 				7438733E1759527C0069EEC9 /* tiltBackground.png in Resources */,
 				74387341175956AD0069EEC9 /* driveBackground.png in Resources */,
@@ -591,6 +607,7 @@
 				743873471759579F0069EEC9 /* mood-surprised.png in Resources */,
 				743873481759579F0069EEC9 /* mood-happy.png in Resources */,
 				D1CC408E196C54B400BB7D3D /* button-trans.png in Resources */,
+				D1B34440196F42B40002917F /* tiltBackground-02.png in Resources */,
 				743873491759579F0069EEC9 /* mood-angry.png in Resources */,
 				74193725175E777D0012A630 /* ButtonPage.xib in Resources */,
 				7419372A1767A09A0012A630 /* ButtonScrollView.xib in Resources */,
@@ -704,9 +721,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -722,12 +740,16 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -740,9 +762,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -751,9 +774,12 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = "";
@@ -781,7 +807,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -800,7 +826,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -812,14 +838,13 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Romibo.app/Romibo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Romibo/Romibo-Prefix.pch";
 				INFOPLIST_FILE = "RomiboTests/RomiboTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -829,14 +854,13 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Romibo.app/Romibo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Romibo/Romibo-Prefix.pch";
 				INFOPLIST_FILE = "RomiboTests/RomiboTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -844,9 +868,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -855,9 +880,12 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = "";
@@ -885,7 +913,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -897,14 +925,13 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Romibo.app/Romibo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Romibo/Romibo-Prefix.pch";
 				INFOPLIST_FILE = "RomiboTests/RomiboTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = "Ad-Hoc";
 		};
