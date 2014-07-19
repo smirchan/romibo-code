@@ -33,6 +33,7 @@
     
     HeadTiltNubView* tNub;
     DrivingNubView* dNub;
+    EmotionNubView* eNub;
 
     id appDelegate;
     
@@ -66,6 +67,7 @@
 //component views (drive, tilt, buttons)
 - (void)setupHeadTiltSubview;
 - (void)setupDrivingSubview;
+- (void)setupEmotionSubview;
 - (void)setupButtonScrollView;
 
 @end

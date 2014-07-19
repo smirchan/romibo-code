@@ -83,12 +83,15 @@
 		74D1A82B170F5BDE007E8CF9 /* RomiboAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */; };
 		D10F96A3196C57C20082C043 /* tilt-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D10F96A2196C57C20082C043 /* tilt-button.png */; };
 		D12E77A619670A1D008A7381 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12E77A519670A1D008A7381 /* CoreMotion.framework */; };
+		D135162619759D3A00985106 /* NubViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D135162519759D3A00985106 /* NubViewBase.m */; };
 		D141B993195B104F000C2719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D141B992195B104F000C2719 /* Images.xcassets */; };
+		D168F3DE1979A65200B50D70 /* UIColor+RomiboColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D168F3DD1979A65200B50D70 /* UIColor+RomiboColors.m */; };
 		D1B3443C196F42AE0002917F /* driveBackground-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B3443B196F42AE0002917F /* driveBackground-02.png */; };
 		D1B34440196F42B40002917F /* tiltBackground-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B3443F196F42B40002917F /* tiltBackground-02.png */; };
 		D1B34442196F43680002917F /* movement-nub-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34441196F43680002917F /* movement-nub-03.png */; };
 		D1B34444196F43A30002917F /* emotion-nub-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34443196F43A30002917F /* emotion-nub-03.png */; };
 		D1B34447196F477D0002917F /* movement-base-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34446196F477D0002917F /* movement-base-02.png */; };
+		D1B37C861978C86F00858334 /* emotion-base-04.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B37C851978C86F00858334 /* emotion-base-04.png */; };
 		D1CC4083196B2C6600BB7D3D /* background-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC4082196B2C6600BB7D3D /* background-custom.png */; };
 		D1CC4085196B3ABD00BB7D3D /* romibo-logo-trans.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */; };
 		D1CC408C196C535500BB7D3D /* button-4.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC408B196C535500BB7D3D /* button-4.png */; };
@@ -223,13 +226,18 @@
 		74D1A82A170F5BDE007E8CF9 /* RomiboAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RomiboAppIcon.png; sourceTree = "<group>"; };
 		D10F96A2196C57C20082C043 /* tilt-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tilt-button.png"; sourceTree = "<group>"; };
 		D12E77A519670A1D008A7381 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D135162419759D3A00985106 /* NubViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NubViewBase.h; sourceTree = "<group>"; };
+		D135162519759D3A00985106 /* NubViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NubViewBase.m; sourceTree = "<group>"; };
 		D141B992195B104F000C2719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RomiboEyes.xcodeproj; path = RomiboEyes/RomiboEyes.xcodeproj; sourceTree = "<group>"; };
+		D168F3DC1979A65200B50D70 /* UIColor+RomiboColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+RomiboColors.h"; path = "lib/UIColor+RomiboColors.h"; sourceTree = "<group>"; };
+		D168F3DD1979A65200B50D70 /* UIColor+RomiboColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RomiboColors.m"; path = "lib/UIColor+RomiboColors.m"; sourceTree = "<group>"; };
 		D1B3443B196F42AE0002917F /* driveBackground-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "driveBackground-02.png"; sourceTree = "<group>"; };
 		D1B3443F196F42B40002917F /* tiltBackground-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiltBackground-02.png"; sourceTree = "<group>"; };
 		D1B34441196F43680002917F /* movement-nub-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movement-nub-03.png"; sourceTree = "<group>"; };
 		D1B34443196F43A30002917F /* emotion-nub-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emotion-nub-03.png"; sourceTree = "<group>"; };
 		D1B34446196F477D0002917F /* movement-base-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movement-base-02.png"; sourceTree = "<group>"; };
+		D1B37C851978C86F00858334 /* emotion-base-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emotion-base-04.png"; sourceTree = "<group>"; };
 		D1CC4082196B2C6600BB7D3D /* background-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-custom.png"; sourceTree = "<group>"; };
 		D1CC4084196B3ABD00BB7D3D /* romibo-logo-trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "romibo-logo-trans.png"; sourceTree = "<group>"; };
 		D1CC408B196C535500BB7D3D /* button-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-4.png"; sourceTree = "<group>"; };
@@ -272,6 +280,8 @@
 				6390519214B66BDF007AB7CC /* EmotionNubView.m */,
 				7438732E17554C2B0069EEC9 /* HeadTiltNubView.h */,
 				7438732F17554C2B0069EEC9 /* HeadTiltNubView.m */,
+				D135162419759D3A00985106 /* NubViewBase.h */,
+				D135162519759D3A00985106 /* NubViewBase.m */,
 				74193722175E777D0012A630 /* ButtonPage.m */,
 				74193721175E777D0012A630 /* ButtonPage.h */,
 				74193723175E777D0012A630 /* ButtonPage.xib */,
@@ -305,6 +315,8 @@
 		6396AF6314B259300023CE66 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				D168F3DC1979A65200B50D70 /* UIColor+RomiboColors.h */,
+				D168F3DD1979A65200B50D70 /* UIColor+RomiboColors.m */,
 				748060B616FD49530023A26B /* DrawPatternLockView.h */,
 				748060B716FD49530023A26B /* DrawPatternLockView.m */,
 				748060B816FD49530023A26B /* DrawPatternLockViewController.h */,
@@ -416,6 +428,7 @@
 		63DD0E2E14B5386E002FDC2F /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				D1B37C851978C86F00858334 /* emotion-base-04.png */,
 				D1B34443196F43A30002917F /* emotion-nub-03.png */,
 				D1B34441196F43680002917F /* movement-nub-03.png */,
 				D1B3443F196F42B40002917F /* tiltBackground-02.png */,
@@ -607,6 +620,7 @@
 				743873471759579F0069EEC9 /* mood-surprised.png in Resources */,
 				743873481759579F0069EEC9 /* mood-happy.png in Resources */,
 				D1CC408E196C54B400BB7D3D /* button-trans.png in Resources */,
+				D1B37C861978C86F00858334 /* emotion-base-04.png in Resources */,
 				D1B34440196F42B40002917F /* tiltBackground-02.png in Resources */,
 				743873491759579F0069EEC9 /* mood-angry.png in Resources */,
 				74193725175E777D0012A630 /* ButtonPage.xib in Resources */,
@@ -673,7 +687,9 @@
 				748060BB16FD49530023A26B /* DrawPatternLockViewController.m in Sources */,
 				7438733017554C2B0069EEC9 /* HeadTiltNubView.m in Sources */,
 				74193724175E777D0012A630 /* ButtonPage.m in Sources */,
+				D168F3DE1979A65200B50D70 /* UIColor+RomiboColors.m in Sources */,
 				741937291767A09A0012A630 /* ButtonScrollView.m in Sources */,
+				D135162619759D3A00985106 /* NubViewBase.m in Sources */,
 				743A1417178CA6E5007AAEB5 /* SimpleButtonPage.m in Sources */,
 				743A141B178CA7E5007AAEB5 /* ButtonPageBase.m in Sources */,
 			);

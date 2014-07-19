@@ -11,7 +11,6 @@
 
 @implementation DrivingNubView
 
-@synthesize cmdDelegate, appDelegate;
 @synthesize motionManager;
 
 
@@ -28,10 +27,12 @@
     return self;
 }
 
+
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*) event
 {
     currentPt = [[touches anyObject] locationInView:self];
 }
+
 
 - (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*) event
 {
@@ -48,41 +49,11 @@
     
 }
 
-- (CGPoint)clipPoint:(CGPoint)point
-{
-    float midPointX = CGRectGetMidX(self.bounds);
-    
-    if (point.x > self.superview.bounds.size.width - midPointX)
-        point.x = self.superview.bounds.size.width - midPointX;
-    else if (point.x < midPointX)
-        point.x = midPointX;
-    
-    float midPointY = CGRectGetMidY(self.bounds);
-    
-    if (point.y > self.superview.bounds.size.height - midPointY)
-        point.y = self.superview.bounds.size.height - midPointY;
-    else if (point.y < midPointY)
-        point.y = midPointY;
-    
-    return point;
-}
 
 -(void)calcDriveCoordinates :(int)x :(int)y
 {
     float fx = x;
     float fy = y;
-    
-    if (fx > 338)
-        fx = 338;
-    
-    if (fy > 338)
-        fy = 338;
-    
-    if (fx < 0)
-        fx = 0;
-    
-    if (fy < 0)
-        fy = 0;
     
     fx = (fx - 169);
     fy = - (fy - 169); //iOS origin is upper left
@@ -114,21 +85,18 @@
     
 }
 
+
 -(int)getLarger :(int)i :(int)j
 {
-    if (i > j)
-        return i;
-    
-    return j;
-
+    if (i > j) return i;
+    else return j;
 }
+
+
 -(int)getSmaller :(int)i :(int)j
 {
-    if ( i < j)
-        return i;
-    
-    return j;
-    
+    if (i < j) return i;
+    else return j;
 }
 
 
@@ -170,10 +138,8 @@
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [UIView animateWithDuration:0.2
-                     animations:^{
-                         self.center = CGPointMake(CGRectGetMidX(self.superview.bounds), CGRectGetMidY(self.superview.bounds));
-                     }];
+    [self animateToCenter];
+    
     [[appDelegate romibo] sendDriveCmd:0:0];
 }
 

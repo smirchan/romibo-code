@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+RomiboColors.h"
 #import "EmotionNubView.h"
 #import "DrivingNubView.h"
 #import "ConfigViewController.h"
@@ -35,7 +36,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.69 blue:0.168 alpha:1.0];
+    self.view.backgroundColor = [UIColor romiboYellow];
     
     [self closePopup];
     
@@ -58,6 +59,8 @@
     [self setupHeadTiltSubview];
     
     [self setupDrivingSubview];
+    
+    [self setupEmotionSubview];
     
 }
 
@@ -168,6 +171,26 @@
     
     [self.view addSubview:drivingView ];
     [drivingView release];
+}
+
+- (void)setupEmotionSubview
+{
+    UIImageView* emotionView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"emotion-base-04.png"]];
+    
+    eNub = [[EmotionNubView alloc] init];
+    
+    emotionView.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 120, 172, 240, 120);
+    
+    eNub.center = CGPointMake(CGRectGetMidX(emotionView.bounds), CGRectGetMidY(emotionView.bounds));
+    
+    eNub.userInteractionEnabled = YES;
+    emotionView.userInteractionEnabled = YES;
+    
+    [emotionView addSubview:eNub];
+    [eNub release];
+    
+    [self.view addSubview:emotionView];
+    [emotionView release];
 }
 
 - (void)tiltClicked:(id)sender

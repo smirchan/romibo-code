@@ -8,26 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
-#import "CmdDelegate.h"
+#import "NubViewBase.h"
 
-@interface DrivingNubView : UIImageView
-{
-    CGPoint currentPt;
-    
-    id appDelegate;
-    
-}
-
-
-@property (nonatomic, assign) id appDelegate;
-@property (nonatomic, retain) id <CmdDelegate> cmdDelegate;
+@interface DrivingNubView : NubViewBase
 
 @property (nonatomic, strong) CMMotionManager *motionManager;
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)calcDriveCoordinates :(int)x :(int)y;
 - (void)startAccelerometer;
 - (void)stopAccelerometer;
 - (int)getLarger :(int)i :(int)j;
