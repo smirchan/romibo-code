@@ -13,7 +13,7 @@
 @interface NubViewBase : UIImageView
 {
     CGPoint currentPt;
-    
+        
     id appDelegate;
     
 }

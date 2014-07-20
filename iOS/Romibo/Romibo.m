@@ -135,8 +135,6 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     bool drivingAllowed = [userDefaults boolForKey:@"ALLOW_DRIVING"];
     
-    if (drivingAllowed) NSLog(@"Driving Allowed");
-    else NSLog(@"Driving Not Allowed");
     
     if (drivingAllowed) {
         
@@ -146,6 +144,9 @@
     
         [self setDriveCmd:dCmd];
     }
+    
+    else NSLog(@"Driving Not Allowed");
+
 }
 
 -(void)sendEmoteCmd:(int)x :(int)y

@@ -71,7 +71,6 @@
 		7470808C16CF1D650007158D /* CommandPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7470808B16CF1D650007158D /* CommandPickerController.m */; };
 		7480608616FD31270023A26B /* ChildBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7480608416FD31270023A26B /* ChildBaseView.m */; };
 		7480608716FD31270023A26B /* ChildBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7480608516FD31270023A26B /* ChildBaseView.xib */; };
-		7480608C16FD41F50023A26B /* silhouette.png in Resources */ = {isa = PBXBuildFile; fileRef = 7480608B16FD41F50023A26B /* silhouette.png */; };
 		748060BA16FD49530023A26B /* DrawPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 748060B716FD49530023A26B /* DrawPatternLockView.m */; };
 		748060BB16FD49530023A26B /* DrawPatternLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748060B916FD49530023A26B /* DrawPatternLockViewController.m */; };
 		748060BE16FE71820023A26B /* dot_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 748060BC16FE71820023A26B /* dot_off.png */; };
@@ -86,10 +85,11 @@
 		D135162619759D3A00985106 /* NubViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D135162519759D3A00985106 /* NubViewBase.m */; };
 		D141B993195B104F000C2719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D141B992195B104F000C2719 /* Images.xcassets */; };
 		D168F3DE1979A65200B50D70 /* UIColor+RomiboColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D168F3DD1979A65200B50D70 /* UIColor+RomiboColors.m */; };
+		D168F3E7197B54CA00B50D70 /* silhouette.png in Resources */ = {isa = PBXBuildFile; fileRef = D168F3E6197B54CA00B50D70 /* silhouette.png */; };
+		D168F3E9197B56C800B50D70 /* emotion-nub-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D168F3E8197B56C800B50D70 /* emotion-nub-03.png */; };
 		D1B3443C196F42AE0002917F /* driveBackground-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B3443B196F42AE0002917F /* driveBackground-02.png */; };
 		D1B34440196F42B40002917F /* tiltBackground-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B3443F196F42B40002917F /* tiltBackground-02.png */; };
 		D1B34442196F43680002917F /* movement-nub-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34441196F43680002917F /* movement-nub-03.png */; };
-		D1B34444196F43A30002917F /* emotion-nub-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34443196F43A30002917F /* emotion-nub-03.png */; };
 		D1B34447196F477D0002917F /* movement-base-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B34446196F477D0002917F /* movement-base-02.png */; };
 		D1B37C861978C86F00858334 /* emotion-base-04.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B37C851978C86F00858334 /* emotion-base-04.png */; };
 		D1CC4083196B2C6600BB7D3D /* background-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CC4082196B2C6600BB7D3D /* background-custom.png */; };
@@ -212,7 +212,6 @@
 		7480608316FD31270023A26B /* ChildBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBaseView.h; sourceTree = "<group>"; };
 		7480608416FD31270023A26B /* ChildBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBaseView.m; sourceTree = "<group>"; };
 		7480608516FD31270023A26B /* ChildBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildBaseView.xib; sourceTree = "<group>"; };
-		7480608B16FD41F50023A26B /* silhouette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = silhouette.png; path = imgs/silhouette.png; sourceTree = "<group>"; };
 		748060B616FD49530023A26B /* DrawPatternLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawPatternLockView.h; path = lib/DrawPatternLockView.h; sourceTree = "<group>"; };
 		748060B716FD49530023A26B /* DrawPatternLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawPatternLockView.m; path = lib/DrawPatternLockView.m; sourceTree = "<group>"; };
 		748060B816FD49530023A26B /* DrawPatternLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawPatternLockViewController.h; path = lib/DrawPatternLockViewController.h; sourceTree = "<group>"; };
@@ -232,10 +231,11 @@
 		D141B9DD195B196B000C2719 /* RomiboEyes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RomiboEyes.xcodeproj; path = RomiboEyes/RomiboEyes.xcodeproj; sourceTree = "<group>"; };
 		D168F3DC1979A65200B50D70 /* UIColor+RomiboColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+RomiboColors.h"; path = "lib/UIColor+RomiboColors.h"; sourceTree = "<group>"; };
 		D168F3DD1979A65200B50D70 /* UIColor+RomiboColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RomiboColors.m"; path = "lib/UIColor+RomiboColors.m"; sourceTree = "<group>"; };
+		D168F3E6197B54CA00B50D70 /* silhouette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silhouette.png; sourceTree = "<group>"; };
+		D168F3E8197B56C800B50D70 /* emotion-nub-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emotion-nub-03.png"; sourceTree = "<group>"; };
 		D1B3443B196F42AE0002917F /* driveBackground-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "driveBackground-02.png"; sourceTree = "<group>"; };
 		D1B3443F196F42B40002917F /* tiltBackground-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiltBackground-02.png"; sourceTree = "<group>"; };
 		D1B34441196F43680002917F /* movement-nub-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movement-nub-03.png"; sourceTree = "<group>"; };
-		D1B34443196F43A30002917F /* emotion-nub-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emotion-nub-03.png"; sourceTree = "<group>"; };
 		D1B34446196F477D0002917F /* movement-base-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movement-base-02.png"; sourceTree = "<group>"; };
 		D1B37C851978C86F00858334 /* emotion-base-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emotion-base-04.png"; sourceTree = "<group>"; };
 		D1CC4082196B2C6600BB7D3D /* background-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-custom.png"; sourceTree = "<group>"; };
@@ -429,7 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				D1B37C851978C86F00858334 /* emotion-base-04.png */,
-				D1B34443196F43A30002917F /* emotion-nub-03.png */,
+				D168F3E8197B56C800B50D70 /* emotion-nub-03.png */,
 				D1B34441196F43680002917F /* movement-nub-03.png */,
 				D1B3443F196F42B40002917F /* tiltBackground-02.png */,
 				D1B3443B196F42AE0002917F /* driveBackground-02.png */,
@@ -451,9 +451,9 @@
 				74D1A819170643BD007E8CF9 /* ActionButton.png */,
 				748060BC16FE71820023A26B /* dot_off.png */,
 				748060BD16FE71820023A26B /* dot_on.png */,
-				7480608B16FD41F50023A26B /* silhouette.png */,
 				63AEE88314B91C2300A8C8DC /* emotion-base-03.png */,
 				63DD0EA514B54C1F002FDC2F /* sound_left.png */,
+				D168F3E6197B54CA00B50D70 /* silhouette.png */,
 				63DD0EA614B54C1F002FDC2F /* sound_right.png */,
 				63DD0E8914B5393B002FDC2F /* background-01.png */,
 				63DD0E8A14B5393B002FDC2F /* background-02.png */,
@@ -584,6 +584,7 @@
 				D141B993195B104F000C2719 /* Images.xcassets in Resources */,
 				63DD0E9714B5393B002FDC2F /* background-01.png in Resources */,
 				63DD0E9814B5393B002FDC2F /* background-02.png in Resources */,
+				D168F3E7197B54CA00B50D70 /* silhouette.png in Resources */,
 				63DD0E9914B5393B002FDC2F /* background-03.png in Resources */,
 				63DD0E9A14B5393B002FDC2F /* button-02.png in Resources */,
 				63DD0E9B14B5393B002FDC2F /* emotion-base-02.png in Resources */,
@@ -602,11 +603,9 @@
 				63AEE88414B91C2300A8C8DC /* emotion-base-03.png in Resources */,
 				74A6F86516CF0B1F00B99FF0 /* RomiboCommands.txt in Resources */,
 				7480608716FD31270023A26B /* ChildBaseView.xib in Resources */,
-				7480608C16FD41F50023A26B /* silhouette.png in Resources */,
 				748060BE16FE71820023A26B /* dot_off.png in Resources */,
 				D1CC4085196B3ABD00BB7D3D /* romibo-logo-trans.png in Resources */,
 				748060BF16FE71820023A26B /* dot_on.png in Resources */,
-				D1B34444196F43A30002917F /* emotion-nub-03.png in Resources */,
 				D1B3443C196F42AE0002917F /* driveBackground-02.png in Resources */,
 				74D1A81B170643BD007E8CF9 /* ActionButton.png in Resources */,
 				74D1A827170BA8B3007E8CF9 /* movement_base.png in Resources */,
@@ -617,6 +616,7 @@
 				7438733E1759527C0069EEC9 /* tiltBackground.png in Resources */,
 				74387341175956AD0069EEC9 /* driveBackground.png in Resources */,
 				743873461759579F0069EEC9 /* mood-sad.png in Resources */,
+				D168F3E9197B56C800B50D70 /* emotion-nub-03.png in Resources */,
 				743873471759579F0069EEC9 /* mood-surprised.png in Resources */,
 				743873481759579F0069EEC9 /* mood-happy.png in Resources */,
 				D1CC408E196C54B400BB7D3D /* button-trans.png in Resources */,

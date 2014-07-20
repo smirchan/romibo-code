@@ -4,8 +4,8 @@ draw_t0.wav,Draw the sky
 draw_m1.wav,Draw me a friend
 draw_t1.wav,Draw the water
 draw_the.wav,Draw the land
-why_is_t.wav,Why is that
-what_i1.wav,What is happening in this picture
+why_is_t.wav,Why is that?
+what_i1.wav,What is happening in this picture?
 draw_m3.wav,Draw me a scarf
 draw_s0.wav,Draw something...
 red.wav,Red

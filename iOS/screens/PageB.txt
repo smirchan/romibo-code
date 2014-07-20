@@ -1,5 +1,5 @@
 I Spy
-lets_p0.wav,Lets play i spy
+lets_p0.wav,Let's play I Spy
 somethin.wav,Something
 red.wav,Red
 orange.wav,Orange
@@ -12,8 +12,8 @@ white.wav,White
 big.wav,Big
 small.wav,Small
 no.wav,No
-Yes_2.wav,Yes 2
+Yes_2.wav,Yes
 guess_ag.wav,Guess again
 keep_gue.wav,Keep guessing
 you're_c.wav,You're close
-you_win.wav,You win
+you_win.wav,You win!

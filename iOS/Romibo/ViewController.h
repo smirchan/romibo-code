@@ -46,11 +46,7 @@
 
 @property (nonatomic, assign) id appDelegate;
 
-//handles the emotion buttons
--(IBAction)happyClicked:(id)sender;
--(IBAction)sadClicked:(id)sender;
--(IBAction)surprisedClicked:(id)sender;
--(IBAction)angryClicked:(id)sender;
+//handles accelerometer button
 -(IBAction)tiltClicked:(id)sender;
 -(IBAction)tiltRaised:(id)sender;
 

@@ -181,7 +181,7 @@
     
     emotionView.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 120, 172, 240, 120);
     
-    eNub.center = CGPointMake(CGRectGetMidX(emotionView.bounds), CGRectGetMidY(emotionView.bounds));
+    eNub.center = CGPointMake(CGRectGetMidX(emotionView.bounds), CGRectGetMaxY(emotionView.bounds));
     
     eNub.userInteractionEnabled = YES;
     emotionView.userInteractionEnabled = YES;
@@ -253,56 +253,6 @@
         [configPopover dismissPopoverAnimated:YES];
     
     [configPopover release];
-}
-
-
-
--(IBAction)happyClicked:(id)sender
-{
-    
-    NSString* emotion = @"emote 100 100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
-    
-    self.view.backgroundColor = [UIColor colorWithRed:0.507 green:0.729 blue:0.187 alpha:1.0];
-}
-
-
-
--(IBAction)surprisedClicked:(id)sender
-{
-    
-    NSString* emotion = @"emote 100 -100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
-
-    self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.69 blue:0.168 alpha:1.0];
-}
-
-
--(IBAction)angryClicked:(id)sender
-{
-    
-    NSString* emotion = @"emote -100 100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
-
-    self.view.backgroundColor = [UIColor colorWithRed:0.89 green:0.08 blue:0.188 alpha:1.0];
-}
-
-
--(IBAction)sadClicked:(id)sender
-{
-    
-    NSString* emotion = @"emote -100 -100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
-
-    self.view.backgroundColor = [UIColor colorWithRed:0.24 green:0.65 blue:0.80 alpha:1.0];
 }
 
 - (void)dealloc {

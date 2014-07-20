@@ -12,6 +12,6 @@
 @interface EmotionNubView : NubViewBase
 
 - (UIColor*)getColorForPoint:(CGPoint)point;
--(void)calcEmoteCoordinates:(int)x :(int)y;
+-(void)calcEmoteCoordinates:(UIColor*)color;
 
 @end

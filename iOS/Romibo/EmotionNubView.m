@@ -11,9 +11,10 @@
 
 @implementation EmotionNubView
 
+
 - (id)init
 {   
-    if (self = [super initWithFrame:CGRectMake(0, 0, 30, 30)])
+    if (self = [super initWithFrame:CGRectMake(0, 0, 35, 35)])
     {
         self.image = [UIImage imageNamed:@"emotion-nub-03.png"];
         self.userInteractionEnabled = YES;
@@ -23,9 +24,11 @@
     return self;
 }
 
+
 - (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*) event
 {
     CGPoint activePt = [[touches anyObject] locationInView:self];
+    
     CGFloat newX = self.center.x + (activePt.x - currentPt.x);
     newX = [self clipX:newX inside:NO];
     
@@ -33,28 +36,31 @@
     newY = [self clipY:newY insideTop:YES insideBottom:NO];
     
     CGPoint newPt = CGPointMake(newX, newY);
-    
     self.center = newPt;
     
-    self.superview.superview.backgroundColor = [self getColorForPoint:newPt];
+    UIColor *newColor = [self getColorForPoint:newPt];
+    
+    if (![newColor isEqual:self.superview.superview.backgroundColor]) {
+        
+        [UIView animateWithDuration:0.2 animations:^{
+            
+            self.superview.superview.backgroundColor = newColor;
+            
+        }];
+    }
 }
 
 
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    CGPoint activePt = [[touches anyObject] locationInView:self];
-    
-    CGPoint newPt = CGPointMake(self.center.x + (activePt.x - currentPt.x), 
-                                self.center.y + (activePt.y - currentPt.y));
-    
-    [self calcEmoteCoordinates:newPt.x:newPt.y];
+    [self calcEmoteCoordinates:self.superview.superview.backgroundColor];
 }
 
 
 - (UIColor*)getColorForPoint:(CGPoint)point
 {
     CGFloat midX = CGRectGetMidX(self.superview.bounds);
-    
+
     if (point.x < midX) {
         if (point.x < 0.33 * midX) {
             return [UIColor romiboGreen];
@@ -100,6 +106,18 @@
     
 }
 
+- (void)calcEmoteCoordinates:(UIColor *)color
+{
+    NSString *emotion = @"emote 0 0\r";
+    if ([color isEqual:[UIColor romiboGreen]])    emotion = @"emote -100 100\r";
+    else if ([color isEqual:[UIColor romiboYellow]])   emotion = @"emote 100 -100\r";
+    else if ([color isEqual:[UIColor romiboRed]])   emotion = @"emote 100 100\r";
+    else if ([color isEqual:[UIColor romiboBlue]]) emotion = @"emote -100 -100\r";
+
+    [[appDelegate romibo] sendString:emotion];
+}
+
+/*
 - (void)calcEmoteCoordinates:(int)x :(int)y
 {
     
@@ -111,8 +129,7 @@
     
     [[appDelegate romibo] sendEmoteCmd:roundf(emoteX):roundf(emoteY)];
 }
-
-
+*/
 
 - (void)dealloc
 {

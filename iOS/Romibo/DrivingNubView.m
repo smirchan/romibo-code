@@ -18,7 +18,7 @@
 {   
     if (self = [super initWithFrame:CGRectMake(0, 0, 90, 90)])
     {
-        self.image = [UIImage imageNamed:@"emotion-nub-03.png"];
+        self.image = [UIImage imageNamed:@"movement-nub-03.png"];
         self.userInteractionEnabled = YES;
         self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         motionManager = [[CMMotionManager alloc] init];
