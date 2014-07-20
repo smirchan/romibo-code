@@ -179,7 +179,7 @@
     
     eNub = [[EmotionNubView alloc] init];
     
-    emotionView.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 120, 172, 240, 120);
+    emotionView.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 120, 174, 240, 120);
     
     eNub.center = CGPointMake(CGRectGetMidX(emotionView.bounds), CGRectGetMaxY(emotionView.bounds));
     
