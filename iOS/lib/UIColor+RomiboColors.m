@@ -19,4 +19,6 @@
 
 + (UIColor*)romiboRed {     return [UIColor colorWithRed:0.890 green:0.080 blue:0.188 alpha:1.0]; }
 
++ (UIColor*)romiboGray {    return [UIColor colorWithRed:0.965 green:0.965 blue:0.965 alpha:1.0]; }
+
 @end

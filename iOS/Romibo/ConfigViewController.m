@@ -7,6 +7,7 @@
 //
 
 #import "ConfigViewController.h"
+#import "UIColor+RomiboColors.h";
 
 @implementation ConfigViewController
 
@@ -32,6 +33,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.preferredContentSize = CGSizeMake(300, 260);
+        self.view.backgroundColor = [UIColor romiboGray];
     }
     return self;
 }

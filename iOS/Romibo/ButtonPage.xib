@@ -341,7 +341,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="245">
-                    <rect key="frame" x="33" y="361" width="504" height="21"/>
+                    <rect key="frame" x="28" y="361" width="504" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

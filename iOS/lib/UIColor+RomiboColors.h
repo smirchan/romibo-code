@@ -14,5 +14,6 @@
 + (UIColor*)romiboYellow;
 + (UIColor*)romiboBlue;
 + (UIColor*)romiboRed;
++ (UIColor*)romiboGray;
 
 @end
