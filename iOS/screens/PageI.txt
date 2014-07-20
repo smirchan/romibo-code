@@ -7,9 +7,9 @@ what_d4.wav,What do you call a driving robot?
 an_auton.wav,An autonomous car
 why_co0.wav,Why couldn't the robot go to the party?
 it_was_u.wav,It was upstairs
-I_hate_t.wav,I hate telling jokes about noble gases. there's never a reaction.
+I_hate_t.wav,I hate telling jokes about noble gases. There's never a reaction.
 what_d7.wav,What do you do with a sick chemist?
-if_you_c.wav,"If you can't helium and you curium, then you might as well barium"
+if_you_c.wav,"If you can't helium and you curium then you might as well barium"
 what_i3.wav,What is the most important rule in chemistry?
 never_li.wav,Never lick the spoon
 what_d1.wav,What did the scientist say when he found two isotopes of helium?

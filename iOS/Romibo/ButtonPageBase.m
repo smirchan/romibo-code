@@ -88,10 +88,10 @@
         UIButton* button = (UIButton*)[self.view viewWithTag:i];
         [button setTitle:label forState:UIControlStateNormal];
         
-        button.contentEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 5);
-        button.titleLabel.minimumScaleFactor = 0.75;
-        button.titleLabel.adjustsFontSizeToFitWidth = YES;
- //       button.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        button.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 5);
+        button.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        button.titleLabel.numberOfLines = 2;
+        button.titleLabel.textAlignment = NSTextAlignmentCenter;
         
         //NSLog(@"%@", [[button titleLabel] text]);
     }

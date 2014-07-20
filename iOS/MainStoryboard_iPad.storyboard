@@ -21,7 +21,7 @@
                                 <rect key="frame" x="200" y="14" width="369" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bjw-5E-YoD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="bjw-5E-YoD">
                                 <rect key="frame" x="0.0" y="142" width="131" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
@@ -102,7 +102,7 @@
         <image name="background-custom.png" width="768" height="1024"/>
         <image name="or-logo.png" width="230" height="82"/>
         <image name="romibo-logo-trans.png" width="750" height="232"/>
-        <image name="silhouette.png" width="30" height="25"/>
+        <image name="silhouette.png" width="172" height="144"/>
         <image name="tilt-button.png" width="440" height="436"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
