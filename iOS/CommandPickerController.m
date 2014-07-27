@@ -7,7 +7,7 @@
 //
 
 #import "CommandPickerController.h"
-#import "UIColor+RomiboColors.h";
+#import "UIColor+RomiboColors.h"
 #import "AppDelegate.h"
 
 @implementation CommandPickerController

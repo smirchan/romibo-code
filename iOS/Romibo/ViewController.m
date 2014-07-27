@@ -242,9 +242,9 @@
 -(void)setConnectionStatus
 {
     if ([[appDelegate romibo] isConnected])
-        [connectionLabel setText:@"Connected"];
+        [connectionLabel setText:@"– Connected"];
     else
-        [connectionLabel setText:@"Not connected"];
+        [connectionLabel setText:@"– Not connected"];
 }
 
 -(void)closePopup
@@ -253,6 +253,11 @@
         [configPopover dismissPopoverAnimated:YES];
     
     [configPopover release];
+}
+
+- (IBAction)unwind:(UIStoryboardSegue *)unwindSegue
+{
+    [unwindSegue.sourceViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)dealloc {

@@ -7,7 +7,7 @@
 //
 
 #import "ConfigViewController.h"
-#import "UIColor+RomiboColors.h";
+#import "UIColor+RomiboColors.h"
 
 @implementation ConfigViewController
 
