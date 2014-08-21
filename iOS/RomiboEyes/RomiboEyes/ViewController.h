@@ -15,13 +15,11 @@
 {
     EyesView *eyesView;
     Eye *eye1, *eye2;
-    UIButton *cameraButton;
+    UIButton *cameraButton, *moveButton;
 
 }
 
 @property CvVideoCamera *camera;
 @property UIImageView *imageView;
-- (void)setupEyes;
-- (void)addCameraButton;
 - (void)startCamera:(UIButton *)button;
 @end

@@ -24,11 +24,13 @@
 		D141B9D2195B196B000C2719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D141B9D0195B196B000C2719 /* InfoPlist.strings */; };
 		D141B9D4195B196B000C2719 /* RomiboEyesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D141B9D3195B196B000C2719 /* RomiboEyesTests.m */; };
 		D141B9E8195B1A52000C2719 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D141B9E7195B1A52000C2719 /* ViewController.mm */; };
+		D15009F8199C134100FD6C1E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15009F7199C134100FD6C1E /* CoreImage.framework */; };
+		D15009FA199C134500FD6C1E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15009F9199C134500FD6C1E /* QuartzCore.framework */; };
+		D18AC2BC198BF4EF004B65AB /* haarcascade_mcs_eyepair_big.xml in Resources */ = {isa = PBXBuildFile; fileRef = D18AC2BB198BF4EF004B65AB /* haarcascade_mcs_eyepair_big.xml */; };
 		D1D86DD4195DF6A7005A88BC /* Eye.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D86DD3195DF6A7005A88BC /* Eye.m */; };
 		D1D86DD6195E01E2005A88BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D86DD5195E01E2005A88BC /* AVFoundation.framework */; };
 		D1DD06F2195C7DEF00AFEF98 /* EyesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD06F1195C7DEE00AFEF98 /* EyesView.m */; };
 		D1DD06F4195C8A2700AFEF98 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DD06F3195C8A2700AFEF98 /* opencv2.framework */; };
-		D1DD06F6195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1DD06F5195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,13 +65,15 @@
 		D141B9D3195B196B000C2719 /* RomiboEyesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomiboEyesTests.m; sourceTree = "<group>"; };
 		D141B9E6195B1A52000C2719 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RomiboEyes/ViewController.h; sourceTree = "<group>"; };
 		D141B9E7195B1A52000C2719 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = RomiboEyes/ViewController.mm; sourceTree = "<group>"; };
+		D15009F7199C134100FD6C1E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D15009F9199C134500FD6C1E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D18AC2BB198BF4EF004B65AB /* haarcascade_mcs_eyepair_big.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_mcs_eyepair_big.xml; path = "../../../../../Downloads/opencv-2.4.6.1/data/haarcascades/haarcascade_mcs_eyepair_big.xml"; sourceTree = "<group>"; };
 		D1D86DD2195DF6A7005A88BC /* Eye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Eye.h; path = RomiboEyes/Eye.h; sourceTree = "<group>"; };
 		D1D86DD3195DF6A7005A88BC /* Eye.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Eye.m; path = RomiboEyes/Eye.m; sourceTree = "<group>"; };
 		D1D86DD5195E01E2005A88BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D1DD06F0195C7DEE00AFEF98 /* EyesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EyesView.h; path = RomiboEyes/EyesView.h; sourceTree = "<group>"; };
 		D1DD06F1195C7DEE00AFEF98 /* EyesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EyesView.m; path = RomiboEyes/EyesView.m; sourceTree = "<group>"; };
 		D1DD06F3195C8A2700AFEF98 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
-		D1DD06F5195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15009FA199C134500FD6C1E /* QuartzCore.framework in Frameworks */,
+				D15009F8199C134100FD6C1E /* CoreImage.framework in Frameworks */,
 				D1D86DD6195E01E2005A88BC /* AVFoundation.framework in Frameworks */,
 				D11D6E79195CA26400060F1B /* AssetsLibrary.framework in Frameworks */,
 				D1DD06F4195C8A2700AFEF98 /* opencv2.framework in Frameworks */,
@@ -130,6 +136,8 @@
 		D141B9A7195B196B000C2719 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D15009F9199C134500FD6C1E /* QuartzCore.framework */,
+				D15009F7199C134100FD6C1E /* CoreImage.framework */,
 				D1D86DD5195E01E2005A88BC /* AVFoundation.framework */,
 				D11D6E78195CA26400060F1B /* AssetsLibrary.framework */,
 				D1DD06F3195C8A2700AFEF98 /* opencv2.framework */,
@@ -157,7 +165,7 @@
 		D141B9B1195B196B000C2719 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD06F5195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml */,
+				D18AC2BB198BF4EF004B65AB /* haarcascade_mcs_eyepair_big.xml */,
 				D141B9B2195B196B000C2719 /* RomiboEyes-Info.plist */,
 				D141B9B3195B196B000C2719 /* InfoPlist.strings */,
 				D141B9B6195B196B000C2719 /* main.m */,
@@ -260,8 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D141B9B5195B196B000C2719 /* InfoPlist.strings in Resources */,
-				D1DD06F6195C8ADD00AFEF98 /* haarcascade_frontalface_default.xml in Resources */,
 				D141B9C0195B196B000C2719 /* Images.xcassets in Resources */,
+				D18AC2BC198BF4EF004B65AB /* haarcascade_mcs_eyepair_big.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
