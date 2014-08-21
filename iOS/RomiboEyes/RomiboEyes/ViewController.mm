@@ -16,6 +16,12 @@ using namespace cv;
 NSString * const faceCascadeName = @"haarcascade_mcs_eyepair_big";
 NSString * const faceCascadePath = [[NSBundle mainBundle] pathForResource:faceCascadeName ofType:@"xml"];
 
+NSTimer *moveTimer;
+NSTimer *blinkTimer;
+
+int resX = 352;
+int resY = 288;
+
 CascadeClassifier faceCascade;
 
 @protocol CvVideoCameraDelegate;
@@ -47,9 +53,9 @@ CascadeClassifier faceCascade;
     
     [self setupEyes];
     
-    [self addCameraButtons];
+    [self addCameraButton];
     
-    camera = [[CvVideoCamera alloc] initWithParentView:imageView];
+    camera = [[CvVideoCamera alloc] init];
     camera.delegate = self;
     camera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
     camera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
@@ -62,6 +68,9 @@ CascadeClassifier faceCascade;
     
     camera.defaultFPS = 5;
     camera.grayscaleMode = NO;
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Attention" message:@"This application utilizes the front facing camera to move the eyes." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alertView show];
     
 }
 
@@ -87,36 +96,39 @@ CascadeClassifier faceCascade;
     [eyesView addSubview:eye2];
 }
 
-- (void)addCameraButtons
+- (void)addCameraButton
 {
     cameraButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [cameraButton addTarget:self action:@selector(startCamera:) forControlEvents:UIControlEventTouchUpInside];
     [cameraButton setTitle:@"Start" forState:UIControlStateNormal];
-    cameraButton.frame = CGRectMake(10, 10, 100, 100);
+    cameraButton.frame = CGRectMake(5, 5, 75, 75);
     [self.view addSubview:cameraButton];
-    cameraButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [cameraButton addTarget:self action:@selector(moveEyes) forControlEvents:UIControlEventTouchUpInside];
-    [cameraButton setTitle:@"Start" forState:UIControlStateNormal];
-    cameraButton.frame = CGRectMake(10, 30, 100, 100);
-    [self.view addSubview:cameraButton];
-
 }
 
 - (void)startCamera:(UIButton *)button
 {
-    [button setTitle:@"Stop" forState:UIControlStateApplication];
-    NSLog(@"Blink");
-    [eyesView blink];
-    faceCascade.load([faceCascadePath UTF8String]);
-    [camera start];
+    if (![camera running]) {
+        [button setTitle:@"Stop" forState:UIControlStateNormal];
+        NSLog(@"Blink");
+        [eyesView blink];
+        faceCascade.load([faceCascadePath UTF8String]);
+        [camera start];
+        moveTimer = [NSTimer scheduledTimerWithTimeInterval:0.8 target:self selector:@selector(move) userInfo:nil repeats:YES];
+        blinkTimer = [NSTimer scheduledTimerWithTimeInterval:6 target:eyesView selector:@selector(blink) userInfo:nil repeats:YES];
+    }
+    else {
+        [moveTimer invalidate];
+        [blinkTimer invalidate];
+        [button setTitle:@"Start" forState:UIControlStateNormal];
+        [camera stop];
+    }
+
 }
 
-
-- (void)moveEyes
+- (void)move
 {
-    if (camera.running) {
-        [eye1 setFrame:eye1.newFrame];
-    }
+    [eye1 move];
+    [eye2 move];
 }
 
 - (void)processImage:(Mat&)colorFrame;
@@ -127,15 +139,16 @@ CascadeClassifier faceCascade;
     Mat grayFrame = bgrPlanes[2]; // R channel
     vector<cv::Rect> faceRects;
     
-    faceCascade.detectMultiScale(grayFrame, faceRects, 1.1, 3, 0, cv::Size(25,25));
+    faceCascade.detectMultiScale(grayFrame, faceRects, 1.1, 3, 0, cv::Size(8,8));
     
     for(unsigned int r = 0; r < faceRects.size(); ++r) {
         cv::rectangle(colorFrame, faceRects[r], cv::Scalar(255,255,0));
-        [eye1 moveX:10 Y:0];
+        int moveX = 0.17 * ((faceRects[r].x + 0.5 * faceRects[r].width)  - (0.5 * resX));
+        int moveY = 0.17 * ((faceRects[r].y + 0.5 * faceRects[r].height)  - (0.5 * resY));
+        [eye1 setMoveX:moveX Y:moveY];
+        [eye2 setMoveX:moveX Y:moveY];
     }
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {

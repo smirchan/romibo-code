@@ -11,7 +11,7 @@
 @implementation Eye
 
 @synthesize originalCenter;
-@synthesize newFrame;
+@synthesize newCenter;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -20,6 +20,7 @@
         self.backgroundColor = [UIColor clearColor];
         self.contentMode = UIViewContentModeRedraw;
         originalCenter = self.center;
+        newCenter = originalCenter;
     }
     return self;
 }
@@ -32,10 +33,17 @@
     CGContextFillEllipseInRect(context, eyeRect);
 }
 
-- (void)moveX: (CGFloat)x Y:(CGFloat)y
+- (void)setMoveX: (CGFloat)x Y:(CGFloat)y
 {
-    newFrame = CGRectMake( self.frame.origin.x + x, self.frame.origin.y - y, self.frame.size.width, self.frame.size.width);
-    
+
+    newCenter = CGPointMake(originalCenter.x + x, originalCenter.y + y);
+}
+
+- (void)move
+{
+    [UIView animateWithDuration:0.75 animations:^ {
+        self.center = newCenter;
+    }];
 }
 
 @end

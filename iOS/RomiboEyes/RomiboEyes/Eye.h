@@ -11,8 +11,9 @@
 @interface Eye : UIView
 
 @property CGPoint originalCenter;
-@property CGRect newFrame;
+@property CGPoint newCenter;
 
-- (void)moveX: (CGFloat)x Y:(CGFloat)y;
+- (void)setMoveX: (CGFloat)x Y:(CGFloat)y;
+- (void)move;
 
 @end
