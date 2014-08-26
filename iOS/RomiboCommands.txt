@@ -1,18 +1,18 @@
-Good_job.wav,Good job sam!
-Goodbye_.wav,Goodbye sam!
-ha_ha_th.wav,Ha ha that's funny
-Hello_Sa.wav,Hello sam!
-How_are_.wav,How are you_
+Good_job.wav,Good job Sam!
+Goodbye_.wav,Goodbye Sam!
+ha_ha_th.wav,Ha ha, that's funny
+Hello_Sa.wav,Hello Sam!
+How_are_.wav,How are you?
 I_like_t.wav,I like that song
 I_like0.wav,I like that
-Lets_dan.wav,Lets dance!
+Lets_dan.wav,Let's dance!
 Me_too!.wav,Me too!
-My_name_.wav,My name is romibo 2
-Sam_is_a.wav,Sam is awesome! 1
+My_name_.wav,My name is Romibo
+Sam_is_a.wav,Sam is awesome!
 That_was.wav,That was fun!
 That's_R.wav,That's right!
-What_do_.wav,What do you like to eat
-What_is_.wav,What is your favorite song
+What_do_.wav,What do you like to eat?
+What_is_.wav,What is your favorite song?
 Where_is.wav,Where is the
 a_row-bo.wav,A row-bot!
 a_silico.wav,A silicon
@@ -28,12 +28,12 @@ cat.wav,Cat
 clap_you.wav,Clap your hands
 climb_th.wav,Climb the tree
 color.wav,Color
-could_yo.wav,Could you draw that
+could_yo.wav,Could you draw that?
 cross_th.wav,Cross the road
 dance_wi.wav,Dance with me
-DIGIT1_1.wav,Digit1 1
-do_what_.wav,Do what i do
-do_you_k.wav,Do you know this one
+DIGIT1_1.wav,Digit1
+do_what_.wav,Do what I do
+do_you_k.wav,Do you know this one?
 dog.wav,Dog
 down.wav,Down
 draw_a_t.wav,Draw a tree
@@ -61,10 +61,10 @@ hand.wav,Hand
 he_was_c.wav,He was crashing his hard drive
 he_was_d.wav,He was data mining
 heavy_me.wav,Heavy metal
-hehe_tha.wav,Hehe that's funny
+hehe_tha.wav,Hehe, that's funny
 HeHe.wav,Hehe
 hello.wav,Hello
-how_did_.wav,How did i get to the moon
+how_did_.wav,How did I get to the moon?
 how.wav,How
 I_am_tir.wav,I am tired
 I_do_not.wav,I do not like that
@@ -74,10 +74,10 @@ I_like1.wav,I like that
 I_look_a.wav,I look awesome
 I_need_t.wav,I need to charge my batteries
 I'll_see.wav,I'll see you next time
-if_you_c.wav,"If you can't helium and you curium, then you might as well barium"
+if_you_c.wav,"If you can't helium and you curium then you might as well barium"
 is_that.wav,Is that
-is_there.wav,Is there anything in the tree
-is_the0.wav,Is there anything in the water
+is_there.wav,Is there anything in the tree?
+is_the0.wav,Is there anything in the water?
 it_was_u.wav,It was upstairs
 just_kid.wav,Just kidding
 keep_gue.wav,Keep guessing
@@ -85,14 +85,14 @@ knock_kn.wav,Knock knock
 left.wav,Left
 let's_pl.wav,Let's play again
 lets_pla.wav,Lets play again
-lets_p0.wav,Lets play i spy
-lets_p1.wav,Lets play simon says
-lets_sin.wav,Lets sing songs
-lets_try.wav,Lets try again
+lets_p0.wav,Let's play I Spy
+lets_p1.wav,Let's play simon says
+lets_sin.wav,Let's sing songs
+lets_try.wav,Let's try again
 look.wav,Look
 louder.wav,Louder
 me_too.wav,Me too
-My_nam0.wav,My name is romibo
+My_nam0.wav,My name is Romibo
 never_li.wav,Never lick the spoon
 no.wav,No
 Oops.wav,Oops
@@ -124,52 +124,52 @@ that's_f.wav,That's funny
 that's_i.wav,That's interesting
 that's_m.wav,That's my favorite
 thing.wav,Thing
-twinkle_.wav,Twinkle 1
+twinkle_.wav,Twinkle
 up.wav,Up
 was_that.wav,Was that
-what_am_.wav,What am i
-what_are.wav,What are we doing
-what_did.wav,What did i do today
-what_d0.wav,What did the robot frog say
-what_d1.wav,What did the scientist say when he found two isotopes of helium
+what_am_.wav,What am I?
+what_are.wav,What are we doing?
+what_did.wav,What did I do today?
+what_d0.wav,What did the robot frog say?
+what_d1.wav,What did the scientist say when he found two isotopes of helium?
 what_d2.wav,What did the
-what_d3.wav,What do you call a clown who's in jail
-what_d4.wav,What do you call a driving robot
-what_d5.wav,What do you call a robot that always takes the longest way around
-what_d6.wav,What do you call a robot that loves canoes
-what_d7.wav,What do you do with a sick chemist
-what_d8.wav,What do you get when you cross a robot and a tractor
-what_hap.wav,What happens next
-what_i0.wav,What is a robot's favorite type of music
-what_i1.wav,What is happening in this picture
-what_i2.wav,What is that
-what_i3.wav,What is the most important rule in chemistry
-what_i4.wav,What is their name
-what_i5.wav,What is your favorite
-What_i6.wav,What is your name
-What's_s.wav,What's silver and lies in the grass
+what_d3.wav,What do you call a clown who's in jail?
+what_d4.wav,What do you call a driving robot?
+what_d5.wav,What do you call a robot that always takes the longest way around?
+what_d6.wav,What do you call a robot that loves canoes?
+what_d7.wav,What do you do with a sick chemist?
+what_d8.wav,What do you get when you cross a robot and a tractor?
+what_hap.wav,What happens next?
+what_i0.wav,What is a robot's favorite type of music?
+what_i1.wav,What is happening in this picture?
+what_i2.wav,What is that?
+what_i3.wav,What is the most important rule in chemistry?
+what_i4.wav,What is their name?
+what_i5.wav,What is your favorite?
+What_i6.wav,What is your name?
+What's_s.wav,What's silver and lies in the grass?
 what.wav,What
-when_doe.wav,When does a robot need training
+when_doe.wav,When does a robot need training?
 when.wav,When
 whenever.wav,Whenever it gets rusty
-where_am.wav,Where am i
+where_am.wav,Where am I
 where.wav,Where
 white.wav,White
-who_is_i.wav,Who is it
-who's_th.wav,Who's there
+who_is_i.wav,Who is it?
+who's_th.wav,Who's there?
 who.wav,Who
-why_coul.wav,Why couldn't the robot get his drivers license
-why_co0.wav,Why couldn't the robot go to the party
-why_did_.wav,Why did the robot cross the road
+why_coul.wav,Why couldn't the robot get his drivers license?
+why_co0.wav,Why couldn't the robot go to the party?
+why_did_.wav,Why did the robot cross the road?
 why_di0.wav,Why did the
-why_is_t.wav,Why is that
-why_was_.wav,Why was the robot angry_
-why_wa0.wav,Why was the robot digging a hole
+why_is_t.wav,Why is that?
+why_was_.wav,Why was the robot angry?
+why_wa0.wav,Why was the robot digging a hole?
 why.wav,Why
 wow.wav,Wow
 yellow.wav,Yellow
 yes.wav,Yes
-You_are_.wav,You are awesome
+You_are_.wav,You are my friend
 you_tell.wav,You tell me
 you_win.wav,You win
 you're_c.wav,You're close
@@ -184,8 +184,8 @@ you're_k.wav,You're kidding
 7.wav,7
 8.wav,8
 9.wav,9
-BECKON1.WAV,Beckon1
-HAPPY1.WAV,Happy1
+BECKON1.WAV,Beckon
+HAPPY1.WAV,Happy
 S1.WAV,S1
 S2.WAV,S2
 S3.WAV,S3
@@ -193,27 +193,27 @@ ah!.wav,Ah!
 Angry.wav,Angry
 Behind.wav,Behind
 Bye.wav,Bye
-Down_1.wav,Down 1
+Down_1.wav,Down
 Eeeeeep!.wav,Eeeeeep!
-Great_1.wav,Great job sam!
-ha_ha_ha.wav,Ha ha ha that's funny
+Great_1.wav,Great job Sam!
+ha_ha_ha.wav,Ha ha ha, that's funny
 Hamburge.wav,Hamburger
 Happy!.wav,Happy!
 Head_Rol.wav,Head roll!
-Hi_Sam!.wav,Hi sam!
+Hi_Sam!.wav,Hi Sam!
 Hi.wav,Hi
-I_don'0.wav,I don't know 1
+I_don'0.wav,I don't know
 Left_1.wav,Left 1
 Love.wav,Love
-Meat_bal.wav,Meat balls
+Meat_bal.wav,Meatballs
 no_1.wav,No 1
 Ooooooo!.wav,Ooooooo!
-Ooops!_1.wav,Ooops! 1
+Ooops!_1.wav,Ooops!
 Orange_J.wav,Orange juice
 Pancakes.wav,Pancakes
 Pizza!.wav,Pizza!
 Please.wav,Please
-Right_1.wav,Right 1
+Right_1.wav,Right
 right_an.wav,Right and left
 Sad.wav,Sad
 Sam_is0.wav,Sam is awesome!
@@ -229,19 +229,19 @@ Up_1.wav,Up 1
 up_and_d.wav,Up and down
 Wheeeeee.wav,Wheeeeee!
 Yay.wav,Yay
-Yes_2.wav,Yes 2
+Yes_2.wav,Yes
 You_ar0.wav,You are my friend
 789.wav,789
-Apples_a.wav,Apples and bananas
-Barney_I.wav,Barney i love you
+Apples_a.wav,Apples and Bananas
+Barney_I.wav,Barney I love you
 Down_by_.wav,Down by the bay
-If_You'r.wav,If you're happy
-Mr_Sun.wav,Mr sun
-Bye_Bye_.wav,Bye bye blackbird
+If_You'r.wav,If You're Happy
+Mr_Sun.wav,Mr. Sun
+Bye_Bye_.wav,Bye Bye Blackbird
 In_the_M.wav,In the mood (glenn miller)
-little_m.wav,Little miss muffet
-old_macd.wav,Old macdonald
-Show_Me_.wav,Show me the way to go home
-the_far0.wav,The farmer in the dell(short)
+little_m.wav,Little Miss Muffet
+old_macd.wav,Old MacDonald
+Show_Me_.wav,Show me the way to go Home
+the_far0.wav,The Farmer in the Dell(short)
 twinkle.wav,Twinkle
-You_Are1.wav,You are my sunshine
+You_Are1.wav,You are my Sunshine

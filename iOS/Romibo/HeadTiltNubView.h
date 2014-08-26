@@ -7,19 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CmdDelegate.h"
-#import "AppDelegate.h"
+#import "NubViewBase.h"
 
-@interface HeadTiltNubView : UIImageView
-{
-    CGPoint currentPt;
-    id appDelegate;
-    
+@interface HeadTiltNubView : NubViewBase
 
-}
-
-@property (nonatomic, retain) id <CmdDelegate> cmdDelegate;
-@property (nonatomic, assign) id appDelegate;
-
+- (void)calcTiltCoordinates :(int)x :(int)y;
 
 @end

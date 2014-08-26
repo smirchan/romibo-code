@@ -1,5 +1,5 @@
 Simon Says
-lets_p1.wav,Lets play simon says
+lets_p1.wav,Let's play Simon Says!
 simon_sa.wav,Simon says
 raise_yo.wav,Raise your
 look.wav,Look
@@ -7,7 +7,7 @@ hand.wav,Hand
 right.wav,Right
 left.wav,Left
 up.wav,Up
-Down_1.wav,Down 1
+Down_1.wav,Down
 point.wav,Point
 Simon_di.wav,Simon didn't say!
 Gotcha!.wav,Gotcha!

@@ -35,8 +35,9 @@
     
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background-02.png"]];
-    
+    self.view.backgroundColor = [UIColor lightGrayColor];
+
+    self.view.alpha = 0.5;
     
     ButtonScrollView* buttonScrollController = [[ButtonScrollView alloc] initWithNibName:@"ButtonScrollView" bundle:[NSBundle mainBundle]];
     
@@ -149,7 +150,7 @@
     
     if (![lockVC isBeingPresented])
     {
-        [self presentModalViewController:lockVC animated:YES];
+        [self presentViewController:lockVC animated:YES completion:nil];
         
     }
     
@@ -160,13 +161,13 @@
     NSLog(@"key: %@", key);
     
     if (![key isEqualToString:@"070809"]) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Wrong pattern"
-                                                            message:@"Wrong pattern for exiting child view"
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Incorrect Key"
+                                                            message:@"Incorrect pattern for exiting child view"
                                                            delegate:nil
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"OK", nil];
         [alertView show];
-        [self dismissModalViewControllerAnimated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
     else
     {
@@ -176,7 +177,7 @@
         
                                     //dismiss ourself
                                      UIViewController* vc = [self presentingViewController];
-                                     [vc dismissModalViewControllerAnimated:true];
+                                     [vc dismissViewControllerAnimated:YES completion:nil];
         
                                  }
          ];

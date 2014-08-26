@@ -1,15 +1,15 @@
 Conversation
 hello.wav,Hello
-My_nam0.wav,My name is romibo
-what_i4.wav,What is their name
-what_i5.wav,What is your favorite
+My_nam0.wav,My name is Romibo
+what_i4.wav,What is their name?
+what_i5.wav,What is your favorite...
 Me_too!.wav,Me too!
-Yes_2.wav,Yes 2
+Yes_2.wav,Yes
 no.wav,No
 ask_me_a.wav,Ask me a question
 I_like1.wav,I like that
 tell_m1.wav,Tell me more
-ouch.wav,Ouch
+ouch.wav,Ouch!
 color.wav,Color
 food.wav,Food
 thing.wav,Thing

@@ -7,6 +7,7 @@
 //
 
 #import "CommandPickerController.h"
+#import "UIColor+RomiboColors.h"
 #import "AppDelegate.h"
 
 @implementation CommandPickerController
@@ -21,7 +22,7 @@
         // Custom initialization
     }
     
-    self.contentSizeForViewInPopover = CGSizeMake(300.0, 300.0);
+    self.preferredContentSize = CGSizeMake(300.0, 300.0);
     
     return self;
 }
@@ -113,6 +114,9 @@
     
     NSString *cmd = (NSString *)[commands objectAtIndex:indexPath.row];
     cell.textLabel.text = cmd;
+    self.view.backgroundColor = [UIColor romiboGray];
+    cell.textLabel.textColor = [UIColor darkTextColor];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica Light" size:15];
     
     return cell;
 }

@@ -10,23 +10,18 @@
 
 @implementation HeadTiltNubView
 
-@synthesize  cmdDelegate, appDelegate;
-
 
 - (id)init
 {
-    if (self = [super initWithImage:[UIImage imageNamed:@"emotion-nub-02.png"]])
+    if (self = [super initWithFrame:CGRectMake(0, 0, 90, 90)])
     {
+        self.image = [UIImage imageNamed:@"movement-nub-03.png"];
         self.userInteractionEnabled = YES;
         self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
     }
     
     return self;
-}
-
-- (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*) event
-{
-    currentPt = [[touches anyObject] locationInView:self];
 }
 
 - (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*) event
@@ -36,27 +31,27 @@
     CGPoint newPt = CGPointMake(self.center.x + (activePt.x - currentPt.x),
                                 self.center.y + (activePt.y - currentPt.y));
     
-    float midPointX = CGRectGetMidX(self.bounds);
+     
+//     float distance = sqrtf( pow(newPt.x - CGRectGetMidX(self.bounds), 2) + pow(newPt.y - CGRectGetMidX(self.bounds),2) );
+//     
+//     NSLog(@"Radius: %f", distance);
+//     
+//     if (distance > 130)
+//     {
+//         newPt = currentPt;
+//     }
     
-    if (newPt.x > self.superview.bounds.size.width - midPointX)
-        newPt.x = self.superview.bounds.size.width - midPointX;
-    else if (newPt.x < midPointX)
-        newPt.x = midPointX;
     
-    float midPointY = CGRectGetMidY(self.bounds);
-    
-    if (newPt.y > self.superview.bounds.size.height - midPointY)
-        newPt.y = self.superview.bounds.size.height - midPointY;
-    else if (newPt.y < midPointY)
-        newPt.y = midPointY;
+    newPt = [self clipPoint:newPt];
     
     self.center = newPt;
     
-    [self calcDriveCoordinates:newPt.x:newPt.y];
+    [self calcTiltCoordinates:newPt.x:newPt.y];
     
 }
 
--(void)calcDriveCoordinates :(int)x :(int)y
+
+-(void)calcTiltCoordinates :(int)x :(int)y
 {
     float fx = x;
     float fy = y;
@@ -67,11 +62,6 @@
     float tiltY = 100 * ((fy - 61)/span);
     
     
-    NSString* tCmd = [NSString stringWithFormat:@"current coords %i %i\r", x, y];
-    
-    NSLog(@"%@", tCmd);
-    
-    
     [[appDelegate romibo] sendHeadTiltCmd:roundf(tiltX):roundf(tiltY)];
     
 }
@@ -79,8 +69,8 @@
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    self.center = CGPointMake(CGRectGetMidX(self.superview.bounds), CGRectGetMidY(self.superview.bounds));
-    
+    [self animateToCenter];
+
     [[appDelegate romibo] sendHeadTiltCmd:50:50];
 }
 

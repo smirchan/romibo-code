@@ -132,11 +132,21 @@
 
 -(void)sendDriveCmd:(int)x :(int)y
 {
-    NSString* dCmd = [NSString stringWithFormat:@"drive %i %i\r", x, y];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    bool drivingAllowed = [userDefaults boolForKey:@"ALLOW_DRIVING"];
     
-    NSLog(@"%@", dCmd);
     
-    [self setDriveCmd:dCmd];
+    if (drivingAllowed) {
+        
+        NSString* dCmd = [NSString stringWithFormat:@"drive %i %i\r", x, y];
+        
+        NSLog(@"%@", dCmd);
+    
+        [self setDriveCmd:dCmd];
+    }
+    
+    else NSLog(@"Driving Not Allowed");
+
 }
 
 -(void)sendEmoteCmd:(int)x :(int)y

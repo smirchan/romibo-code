@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+RomiboColors.h"
 #import "EmotionNubView.h"
 #import "DrivingNubView.h"
 #import "ConfigViewController.h"
@@ -17,7 +18,6 @@
 #import "ChildBaseView.h"
 #import "ButtonScrollView.h"
 #import "AppDelegate.h"
-
 
 @implementation ViewController 
 
@@ -36,14 +36,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background-01.png"]];
-    
+    self.view.backgroundColor = [UIColor romiboYellow];
     
     [self closePopup];
     
     
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
     
     if (!childView)
     {
@@ -52,11 +50,17 @@
        
     }
     
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    [userDefaults setBool:YES forKey:@"ALLOW_DRIVING"];
+    
     [self setupButtonScrollView];
    
     [self setupHeadTiltSubview];
     
     [self setupDrivingSubview];
+    
+    [self setupEmotionSubview];
     
 }
 
@@ -65,7 +69,7 @@
     
     ButtonScrollView* buttonScrollController = [[ButtonScrollView alloc] initWithNibName:@"ButtonScrollView" bundle:[NSBundle mainBundle]];
     
-    buttonScrollController.view.frame = CGRectMake(0, 552, self.view.frame.size.width, self.view.frame.size.height);
+    buttonScrollController.view.frame = CGRectMake(0, 577, self.view.frame.size.width, self.view.frame.size.height);
     
     [buttonScrollController loadButtonPages:@"screens"];
     
@@ -83,10 +87,9 @@
     NSLog(@"Changing shell...");
     
     if (![childView isBeingPresented])
-        [self presentModalViewController:childView animated:YES];
+        [self presentViewController:childView animated:YES completion:nil];
 
 }
-
 
 
 - (void)viewDidUnload
@@ -132,11 +135,11 @@
 
 -(void)setupHeadTiltSubview
 {
-    UIImageView* headTiltView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tiltBackground.png"]];
+    UIImageView* headTiltView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tiltBackground-02.png"]];
     
     tNub = [[HeadTiltNubView alloc] init];
     
-    headTiltView.frame = CGRectMake(400, 215, 338, 338);
+    headTiltView.frame = CGRectMake(400, 250, 338, 338);
     
     tNub.center = CGPointMake(CGRectGetMidX(headTiltView.bounds), CGRectGetMidY(headTiltView.bounds));
     
@@ -152,11 +155,11 @@
 
 -(void)setupDrivingSubview
 {
-    UIImageView* drivingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"driveBackground.png"]];
+    UIImageView* drivingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"driveBackground-02.png"]];
     
     dNub = [[DrivingNubView alloc] init];
     
-    drivingView.frame = CGRectMake(28, 215, 338, 338);
+    drivingView.frame = CGRectMake(28, 250, 338, 338);
     
     dNub.center = CGPointMake(CGRectGetMidX(drivingView.bounds), CGRectGetMidY(drivingView.bounds));
     
@@ -170,6 +173,36 @@
     [drivingView release];
 }
 
+- (void)setupEmotionSubview
+{
+    UIImageView* emotionView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"emotion-base-04.png"]];
+    
+    eNub = [[EmotionNubView alloc] init];
+    
+    emotionView.frame = CGRectMake(CGRectGetMidX(self.view.bounds) - 120, 174, 240, 120);
+    
+    eNub.center = CGPointMake(CGRectGetMidX(emotionView.bounds), CGRectGetMaxY(emotionView.bounds));
+    
+    eNub.userInteractionEnabled = YES;
+    emotionView.userInteractionEnabled = YES;
+    
+    [emotionView addSubview:eNub];
+    [eNub release];
+    
+    [self.view addSubview:emotionView];
+    [emotionView release];
+}
+
+- (void)tiltClicked:(id)sender
+{
+    [dNub startAccelerometer];
+
+}
+
+- (void)tiltRaised:(id)sender
+{
+    [dNub stopAccelerometer];
+}
 
 -(IBAction)configClicked:(id)sender
 {
@@ -191,6 +224,7 @@
     CGRect popoverRect = [self.view convertRect:[sender frame] toView:[sender superview]];
     
     [configPopover presentPopoverFromRect:popoverRect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated: YES];
+
 }
 
 -(void)connectClicked:(NSString*)ipaddr
@@ -208,9 +242,9 @@
 -(void)setConnectionStatus
 {
     if ([[appDelegate romibo] isConnected])
-        [connectionLabel setText:@"Connection OK"];
+        [connectionLabel setText:@"– Connected"];
     else
-        [connectionLabel setText:@"Not Connected"];
+        [connectionLabel setText:@"– Not connected"];
 }
 
 -(void)closePopup
@@ -221,46 +255,9 @@
     [configPopover release];
 }
 
-
-
--(IBAction)happyClicked:(id)sender
+- (IBAction)unwind:(UIStoryboardSegue *)unwindSegue
 {
-    
-    NSString* emotion = @"emote 100 100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
-}
-
-
-
--(IBAction)surprisedClicked:(id)sender
-{
-    
-    NSString* emotion = @"emote 100 -100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
-}
-
-
--(IBAction)angryClicked:(id)sender
-{
-    
-    NSString* emotion = @"emote -100 100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
-}
-
-
--(IBAction)sadClicked:(id)sender
-{
-    
-    NSString* emotion = @"emote -100 -100\r";
-    NSLog(@"Full command: %@", emotion);
-    
-    [[appDelegate romibo] sendString:emotion];
+    [unwindSegue.sourceViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)dealloc {
