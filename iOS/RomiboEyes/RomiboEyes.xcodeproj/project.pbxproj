@@ -239,6 +239,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Suvir Mirchandani";
 				TargetAttributes = {
+					D141B9A4195B196B000C2719 = {
+						DevelopmentTeam = 248KYF2Y5A;
+					};
 					D141B9C4195B196B000C2719 = {
 						TestTargetID = D141B9A4195B196B000C2719;
 					};
@@ -410,6 +413,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Suvir/Downloads,
@@ -418,6 +423,7 @@
 				GCC_PREFIX_HEADER = "RomiboEyes/RomiboEyes-Prefix.pch";
 				INFOPLIST_FILE = "RomiboEyes/RomiboEyes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,6 +434,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Suvir/Downloads,
@@ -436,6 +444,7 @@
 				GCC_PREFIX_HEADER = "RomiboEyes/RomiboEyes-Prefix.pch";
 				INFOPLIST_FILE = "RomiboEyes/RomiboEyes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
